@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JackpotHub.cloud — Social casino style play, no cash required</title>
-  <meta name="description" content="JackpotHub.cloud is a clean, free-to-play hub for social casino style browser games. Instant access, 18+ only, no deposits or prizes.">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <title>Megarush Bean — Fast, free-to-play social casino vibes</title>
+  <meta name="description" content="Megarush Bean (megarushbean.com) is a lively, free-to-play hub for social casino style browser capsules. Instant access, 18+ only, no deposits or prizes.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -12,19 +13,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
 :root{
-  --bg: #060a14;
-  --panel: rgba(255,255,255,0.05);
-  --panel-strong: rgba(255,255,255,0.08);
-  --text: #e9eeff;
-  --muted: #b7c2db;
-  --heading: #fdf6ff;
-  --accent: #f5c452;
-  --accent-2: #70f0c7;
+  --bg: #04130d;
+  --panel: rgba(14,33,24,0.78);
+  --panel-strong: rgba(18,44,32,0.9);
+  --text: #e9f6ed;
+  --muted: #b1c8b7;
+  --heading: #f5ffee;
+  --accent: #f28c38;
+  --accent-2: #7cf0a0;
   --border: rgba(255,255,255,0.12);
   --radius: 14px;
   --font-heading: "Space Grotesk", "Inter", system-ui, sans-serif;
   --font-body: "Poppins", "Inter", system-ui, sans-serif;
-  --shadow: 0 24px 70px rgba(0,0,0,0.5);
+  --shadow: 0 24px 70px rgba(0,0,0,0.55);
 }
 
 *{box-sizing:border-box}
@@ -32,9 +33,9 @@ body{
   margin:0;
   font-family:var(--font-body);
   background:
-    radial-gradient(circle at 15% 10%, rgba(112,240,199,0.08), transparent 28%),
-    radial-gradient(circle at 80% 8%, rgba(245,196,82,0.12), transparent 30%),
-    linear-gradient(140deg, #070c19, #050812 60%, #0b1021);
+    radial-gradient(circle at 16% 10%, rgba(124,240,160,0.12), transparent 30%),
+    radial-gradient(circle at 82% 8%, rgba(242,140,56,0.18), transparent 32%),
+    linear-gradient(140deg, #071b12, #04150e 55%, #0c2518);
   color:var(--text);
   line-height:1.65;
   min-height:100vh;
@@ -50,7 +51,7 @@ img{max-width:100%; display:block}
 
 .notice-banner{
   background:linear-gradient(135deg, var(--accent), var(--accent-2));
-  color:#031017;
+  color:#04140d;
   padding:0.55rem 0;
   text-align:center;
   font-weight:700;
@@ -69,15 +70,15 @@ img{max-width:100%; display:block}
 }
 .banner-pill{
   background:rgba(0,0,0,0.12);
-  color:#031017;
+  color:#04140d;
   padding:0.35rem 0.7rem;
   border-radius:999px;
   font-weight:800;
   letter-spacing:0.5px;
 }
 
-.jackpothub-cloud-nav{
-  background:rgba(6,10,20,0.92);
+.megarushbean-com-nav{
+  background:rgba(5,15,11,0.9);
   border-bottom:1px solid var(--border);
   backdrop-filter:blur(14px);
   position:sticky;
@@ -85,7 +86,7 @@ img{max-width:100%; display:block}
   z-index:60;
   padding:0.85rem 0;
 }
-.jackpothub-cloud-nav .navbar-brand{
+.megarushbean-com-nav .navbar-brand{
   display:flex;
   align-items:center;
   gap:0.65rem;
@@ -98,7 +99,7 @@ img{max-width:100%; display:block}
   border-radius:12px;
   box-shadow:0 12px 30px rgba(0,0,0,0.45);
 }
-.jackpothub-cloud-nav .nav-link{
+.megarushbean-com-nav .nav-link{
   color:var(--text);
   font-weight:600;
   margin:0 0.35rem;
@@ -106,8 +107,8 @@ img{max-width:100%; display:block}
   border-radius:10px;
   transition:background .15s, color .15s;
 }
-.jackpothub-cloud-nav .nav-link.active,
-.jackpothub-cloud-nav .nav-link:hover{
+.megarushbean-com-nav .nav-link.active,
+.megarushbean-com-nav .nav-link:hover{
   background:var(--panel);
   color:var(--accent);
 }
@@ -115,9 +116,9 @@ img{max-width:100%; display:block}
   border:1px solid var(--border);
   color:var(--text);
 }
-.navbar-toggler:focus{box-shadow:0 0 0 3px rgba(112,240,199,0.18)}
+.navbar-toggler:focus{box-shadow:0 0 0 3px rgba(124,240,160,0.2)}
 
-.jackpothub-cloud-btn{
+.megarushbean-com-btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -130,18 +131,18 @@ img{max-width:100%; display:block}
   transition:transform .16s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
   text-decoration:none;
 }
-.jackpothub-cloud-btn.primary{
+.megarushbean-com-btn.primary{
   background:linear-gradient(135deg, var(--accent), var(--accent-2));
-  color:#060a14;
+  color:#04130d;
   box-shadow:0 14px 36px rgba(0,0,0,0.4);
 }
-.jackpothub-cloud-btn.primary:hover{transform:translateY(-2px)}
-.jackpothub-cloud-btn.ghost{
+.megarushbean-com-btn.primary:hover{transform:translateY(-2px)}
+.megarushbean-com-btn.ghost{
   background:var(--panel);
   border-color:var(--border);
   color:var(--text);
 }
-.jackpothub-cloud-btn.ghost:hover{color:var(--accent)}
+.megarushbean-com-btn.ghost:hover{color:var(--accent)}
 
 .eyebrow{
   text-transform:uppercase;
@@ -158,13 +159,13 @@ img{max-width:100%; display:block}
 }
 .section-sub{margin:0 0 1rem; color:var(--muted)}
 
-.jackpothub-cloud-hero{
+.megarushbean-com-hero{
   position:relative;
   padding:clamp(3rem, 6vw, 4.8rem) 0;
   overflow:hidden;
 }
-.jackpothub-cloud-hero::before,
-.jackpothub-cloud-hero::after{
+.megarushbean-com-hero::before,
+.megarushbean-com-hero::after{
   content:"";
   position:absolute;
   width:420px; height:420px;
@@ -173,8 +174,8 @@ img{max-width:100%; display:block}
   opacity:0.35;
   z-index:0;
 }
-.jackpothub-cloud-hero::before{top:-120px; left:-60px; background:radial-gradient(circle, rgba(112,240,199,0.45), transparent 60%)}
-.jackpothub-cloud-hero::after{bottom:-140px; right:-20px; background:radial-gradient(circle, rgba(245,196,82,0.45), transparent 60%)}
+.megarushbean-com-hero::before{top:-120px; left:-60px; background:radial-gradient(circle, rgba(124,240,160,0.48), transparent 60%)}
+.megarushbean-com-hero::after{bottom:-140px; right:-20px; background:radial-gradient(circle, rgba(242,140,56,0.42), transparent 60%)}
 .hero-inner{
   position:relative;
   z-index:1;
@@ -214,12 +215,12 @@ img{max-width:100%; display:block}
   font-size:0.95rem;
 }
 .pill.accent{
-  background:rgba(245,196,82,0.14);
+  background:rgba(242,140,56,0.16);
   color:var(--accent);
-  border-color:rgba(245,196,82,0.4);
+  border-color:rgba(242,140,56,0.42);
 }
 
-.jackpothub-cloud-disclaimer-card{padding:3rem 0}
+.megarushbean-com-disclaimer-card{padding:3rem 0}
 .disclaimer-box{
   max-width:900px;
   margin:0 auto;
@@ -243,7 +244,7 @@ img{max-width:100%; display:block}
 .disclaimer-text{color:var(--muted); margin:0 0 1rem}
 .disclaimer-btn{
   background:var(--accent);
-  color:#060a14;
+  color:#04130d;
   padding:0.6rem 1.25rem;
   border-radius:999px;
   font-weight:700;
@@ -251,7 +252,7 @@ img{max-width:100%; display:block}
 }
 .disclaimer-btn:hover{background:var(--accent-2); color:#02150f}
 
-.jackpothub-cloud-play{
+.megarushbean-com-play{
   padding:3.5rem 0;
   text-align:center;
 }
@@ -271,7 +272,7 @@ img{max-width:100%; display:block}
   max-width:920px;
   border-radius:14px;
   overflow:hidden;
-  background:linear-gradient(160deg, rgba(245,196,82,0.14), rgba(112,240,199,0.08));
+  background:linear-gradient(160deg, rgba(242,140,56,0.18), rgba(124,240,160,0.12));
   border:1px solid var(--border);
   box-shadow:0 16px 40px rgba(0,0,0,0.45);
 }
@@ -289,7 +290,7 @@ img{max-width:100%; display:block}
   font-weight:600;
 }
 
-.jackpothub-cloud-features{
+.megarushbean-com-features{
   padding:3.5rem 0;
   background:rgba(255,255,255,0.01);
 }
@@ -313,7 +314,7 @@ img{max-width:100%; display:block}
 .feature-box h4{margin:0 0 0.35rem; font-family:var(--font-heading)}
 .feature-box p{margin:0; color:var(--muted)}
 
-.jackpothub-cloud-about{padding:3.8rem 0}
+.megarushbean-com-about{padding:3.8rem 0}
 .about-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -321,7 +322,7 @@ img{max-width:100%; display:block}
   align-items:center;
 }
 .about-visual{
-  background:linear-gradient(145deg, rgba(245,196,82,0.2), rgba(112,240,199,0.16));
+  background:linear-gradient(145deg, rgba(242,140,56,0.2), rgba(124,240,160,0.14));
   border:1px solid var(--border);
   border-radius:16px;
   padding:1.5rem;
@@ -331,9 +332,9 @@ img{max-width:100%; display:block}
 }
 .about-visual img{border-radius:12px; box-shadow:0 16px 36px rgba(0,0,0,0.55)}
 .about-text p{color:var(--muted); margin:0 0 0.8rem}
-.about-text .jackpothub-cloud-btn{margin-top:0.4rem}
+.about-text .megarushbean-com-btn{margin-top:0.4rem}
 
-.jackpothub-cloud-reviews{
+.megarushbean-com-reviews{
   padding:3.5rem 0;
   text-align:center;
 }
@@ -354,7 +355,7 @@ img{max-width:100%; display:block}
 .review-text{font-style:italic; color:var(--text); margin:0 0 0.6rem}
 .review-author{color:var(--accent); font-weight:700; margin:0}
 
-.jackpothub-cloud-contact{
+.megarushbean-com-contact{
   background:rgba(255,255,255,0.01);
   padding:4rem 0;
 }
@@ -397,34 +398,34 @@ img{max-width:100%; display:block}
 .contact-form textarea:focus{
   outline:none;
   border-color:var(--accent-2);
-  box-shadow:0 0 0 3px rgba(112,240,199,0.18);
+  box-shadow:0 0 0 3px rgba(124,240,160,0.2);
 }
 .form-status{
   min-height:20px;
   color:var(--muted);
 }
-.form-status.success{color:#8ef8c8}
-.form-status.error{color:#f5c452}
+.form-status.success{color:#9ff2c0}
+.form-status.error{color:#f28c38}
 
-.jackpothub-cloud-legal{
+.megarushbean-com-legal{
   background:rgba(255,255,255,0.02);
   border-top:1px solid var(--border);
   border-bottom:1px solid var(--border);
   padding:3.5rem 0;
 }
-.jackpothub-cloud-legal .section-title{text-align:center}
-.jackpothub-cloud-legal .subheading{
+.megarushbean-com-legal .section-title{text-align:center}
+.megarushbean-com-legal .subheading{
   color:var(--accent);
   font-size:1.15rem;
   margin:1.6rem 0 0.4rem;
 }
-.jackpothub-cloud-legal p{
+.megarushbean-com-legal p{
   color:var(--muted);
   margin:0 0 1rem;
 }
 
-.jackpothub-cloud-footer{
-  background:rgba(6,10,20,0.95);
+.megarushbean-com-footer{
+  background:rgba(5,15,11,0.94);
   color:var(--text);
   text-align:center;
   padding:3.2rem 1rem 2.4rem;
@@ -432,14 +433,14 @@ img{max-width:100%; display:block}
   position:relative;
   overflow:hidden;
 }
-.jackpothub-cloud-footer::before{
+.megarushbean-com-footer::before{
   content:"";
   position:absolute;
   inset:0;
-  background:radial-gradient(circle at 50% 20%, rgba(245,196,82,0.04), transparent 65%);
+  background:radial-gradient(circle at 50% 20%, rgba(242,140,56,0.05), transparent 65%);
   z-index:0;
 }
-.jackpothub-cloud-footer .container{position:relative; z-index:1}
+.megarushbean-com-footer .container{position:relative; z-index:1}
 .footer-brand{
   display:flex;
   align-items:center;
@@ -476,7 +477,7 @@ img{max-width:100%; display:block}
   margin:0;
 }
 
-.jackpothub-cloud-popup{
+.megarushbean-com-popup{
   position:fixed;
   inset:0;
   display:flex;
@@ -489,9 +490,9 @@ img{max-width:100%; display:block}
   transition:opacity .2s, visibility .2s;
   padding:1rem;
 }
-.jackpothub-cloud-popup.active{opacity:1; visibility:visible}
-.jackpothub-cloud-popup .popup-inner{
-  background:linear-gradient(160deg, rgba(6,10,20,0.96), rgba(6,10,20,0.98));
+.megarushbean-com-popup.active{opacity:1; visibility:visible}
+.megarushbean-com-popup .popup-inner{
+  background:linear-gradient(160deg, rgba(5,15,11,0.96), rgba(5,15,11,0.98));
   border:1px solid var(--border);
   color:var(--text);
   padding:1.6rem;
@@ -500,13 +501,13 @@ img{max-width:100%; display:block}
   text-align:center;
   box-shadow:var(--shadow);
 }
-.jackpothub-cloud-popup h3{margin:0 0 0.4rem; color:var(--heading)}
-.jackpothub-cloud-popup p{margin:0 0 0.8rem; color:var(--muted)}
+.megarushbean-com-popup h3{margin:0 0 0.4rem; color:var(--heading)}
+.megarushbean-com-popup p{margin:0 0 0.8rem; color:var(--muted)}
 .popup-buttons{display:flex; justify-content:center; gap:0.6rem; flex-wrap:wrap}
 .popup-buttons .exit{background:transparent; border:1px solid var(--border); color:var(--heading)}
 .popup-buttons .exit:hover{background:var(--panel)}
 
-.jackpothub-cloud-scroll{
+.megarushbean-com-scroll{
   position:fixed;
   right:22px;
   bottom:22px;
@@ -515,7 +516,7 @@ img{max-width:100%; display:block}
   border-radius:50%;
   border:none;
   background:var(--accent);
-  color:#060a14;
+  color:#04130d;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -526,8 +527,8 @@ img{max-width:100%; display:block}
   transition:all .16s;
   z-index:90;
 }
-.jackpothub-cloud-scroll.show{opacity:1; visibility:visible}
-.jackpothub-cloud-scroll:hover{background:var(--accent-2)}
+.megarushbean-com-scroll.show{opacity:1; visibility:visible}
+.megarushbean-com-scroll:hover{background:var(--accent-2)}
 
 .sr-only{
   position:absolute;
@@ -550,7 +551,7 @@ img{max-width:100%; display:block}
 @media (max-width: 768px){
   .hero-title{font-size:2.05rem}
   .game-frame{max-width:100%}
-  .jackpothub-cloud-nav{padding:0.75rem 0}
+  .megarushbean-com-nav{padding:0.75rem 0}
 }
 @media (max-width: 576px){
   .hero-cta{flex-direction:column}
@@ -559,21 +560,21 @@ img{max-width:100%; display:block}
 
 </style>
 </head>
-<body class="jackpothub-cloud jackpothub-cloud-z3e9">
+<body class="megarushbean-com megarushbean-com-z3e9">
 
 <div class="notice-banner notice-banner-p4o3">
   <div class="container container-g1j0 banner-inner banner-inner-u7q0">
     <span class="banner-pill banner-pill-d9v2">18+</span>
-    <span>JackpotHub is a free-to-play social casino experience. No real-money gambling or prizes. 18+ only. Please play responsibly.</span>
+    <span>Megarush Bean is a free-to-play social casino style playground on megarushbean.com. No real-money gambling or prizes. 18+ only. Please play responsibly.</span>
   </div>
 </div>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-o8m1 navbar-expand-lg navbar-expand-lg-m6y6 jackpothub-cloud-nav jackpothub-cloud-nav-e3l3">
+<nav class="navbar navbar-o8m1 navbar-expand-lg navbar-expand-lg-m6y6 megarushbean-com-nav megarushbean-com-nav-e3l3">
   <div class="container container-g1j0 d-flex d-flex-q5f2 align-items-center align-items-center-v5i0 justify-content-between justify-content-between-v2r9">
     <a class="navbar-brand navbar-brand-d6z2" href="/">
-      <img class="brand-logo brand-logo-c2e3" src="assets/img.png" alt="JackpotHub logo">
-      <span class="sr-only sr-only-b4d1">JackpotHub.cloud</span>
+      <img class="brand-logo brand-logo-c2e3" src="assets/img.png" alt="Megarush Bean logo">
+      <span class="sr-only sr-only-b4d1">megarushbean.com</span>
     </a>
     <button class="navbar-toggler navbar-toggler-f6h3" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon navbar-toggler-icon-x7i3"><i class="fas fas-c9r9 fa-bars fa-bars-y5b5"></i></span>
@@ -588,7 +589,7 @@ img{max-width:100%; display:block}
         <li class="nav-item nav-item-x5e8"><a class="nav-link nav-link-m0o7" href="/privacy-policy">Privacy</a></li>
         <li class="nav-item nav-item-x5e8"><a class="nav-link nav-link-m0o7" href="/terms-and-conditions">Terms</a></li>
         <li class="nav-item nav-item-x5e8 ms-lg-2 ms-lg-2-k9n5">
-          <a class="jackpothub-cloud-btn jackpothub-cloud-btn-g5k6 outline outline-x3a2" href="/play">Start a session</a>
+          <a class="megarushbean-com-btn megarushbean-com-btn-g5k6 outline outline-x3a2" href="/play">Start a session</a>
         </li>
       </ul>
     </div>
@@ -596,17 +597,17 @@ img{max-width:100%; display:block}
 </nav>
 
 <!-- HERO -->
-<section id="home" class="jackpothub-cloud-hero jackpothub-cloud-hero-c8o7">
+<section id="home" class="megarushbean-com-hero megarushbean-com-hero-c8o7">
   <div class="container container-g1j0 hero-inner hero-inner-y5d4 text-center text-center-v3f6">
     <p class="eyebrow eyebrow-n6j7">Entertainment only — no cash, no prizes</p>
-    <h1 class="hero-title hero-title-i8o2">Instant, free-to-play browser capsules with a social casino vibe.</h1>
+    <h1 class="hero-title hero-title-i8o2">Spin into Megarush Bean for fast, free-to-play browser thrills—no bankroll needed.</h1>
     <p class="hero-sub hero-sub-f5g2">
-      Clean, mobile-friendly experiences with zero deposits or prizes. Bring your campaigns or demos,
-      keep the mood premium, and make it clear that everything here is entertainment only for adults 18+.
+      Quick-load, mobile-friendly experiences with zero deposits or prizes. Launch campaigns or demos under the
+      megarushbean.com banner, keep it flashy-not-trashy, and stay crystal clear it's pure entertainment for adults 18+.
     </p>
     <div class="hero-cta hero-cta-w8a3">
-      <a href="/play" class="jackpothub-cloud-btn jackpothub-cloud-btn-g5k6 primary primary-e8e2">Play now</a>
-      <a href="#disclaimer-block" class="jackpothub-cloud-btn jackpothub-cloud-btn-g5k6 outline outline-x3a2">See safety note</a>
+      <a href="/play" class="megarushbean-com-btn megarushbean-com-btn-g5k6 primary primary-e8e2">Play now</a>
+      <a href="#disclaimer-block" class="megarushbean-com-btn megarushbean-com-btn-g5k6 outline outline-x3a2">See safety note</a>
     </div>
     <div class="hero-badges hero-badges-t9v9">
       <span class="pill pill-n7n0 accent accent-r8f9"><i class="fa-solid fa-solid-i1m6 fa-bolt fa-bolt-s5i5"></i>Instant load</span>
@@ -617,16 +618,16 @@ img{max-width:100%; display:block}
 </section>
 
 <!-- DISCLAIMER CARD -->
-<section id="disclaimer-block" class="jackpothub-cloud-disclaimer-card jackpothub-cloud-disclaimer-card-x3w7 text-center text-center-v3f6" aria-labelledby="disclaimer-title">
+<section id="disclaimer-block" class="megarushbean-com-disclaimer-card megarushbean-com-disclaimer-card-x3w7 text-center text-center-v3f6" aria-labelledby="disclaimer-title">
   <div class="container container-g1j0">
     <div class="disclaimer-box disclaimer-box-b8y8 mx-auto mx-auto-z9k5 p-4 p-4-i7c6">
       <h2 id="disclaimer-title" class="disclaimer-title disclaimer-title-j4f1">
         <i class="fas fas-c9r9 fa-circle-exclamation fa-circle-exclamation-l6e8"></i> Important notice
       </h2>
       <p class="disclaimer-text disclaimer-text-x5r2">
-        <strong>JackpotHub.cloud</strong> hosts free-to-play social casino style browser experiences.
+        <strong>megarushbean.com</strong> hosts free-to-play social casino style browser experiences.
         There are <strong>no monetary features, deposits, or prizes</strong> on this site.
-        Access is intended for users aged <strong>18+</strong>. Please take breaks and play responsibly.
+        Access is intended for users aged <strong>18+</strong>. Enjoy the glow responsibly and take breaks.
       </p>
       <a href="/disclaimer" class="disclaimer-btn disclaimer-btn-j8p4">Read full disclaimer</a>
     </div>
@@ -634,90 +635,90 @@ img{max-width:100%; display:block}
 </section>
 
 <!-- FEATURES -->
-<section id="features" class="jackpothub-cloud-features jackpothub-cloud-features-m0c2">
+<section id="features" class="megarushbean-com-features megarushbean-com-features-m0c2">
   <div class="container container-g1j0 text-center text-center-v3f6">
-    <h2 class="section-title section-title-p9a8 mb-1 mb-1-e5k0">Built to look premium</h2>
-    <p class="section-sub section-sub-q2n7">Calm polish with a brighter, casino-forward identity.</p>
+    <h2 class="section-title section-title-p9a8 mb-1 mb-1-e5k0">Built for bold, playful drops</h2>
+    <p class="section-sub section-sub-q2n7">Bright, casino-inspired energy tuned for megarushbean.com without over-promising a thing.</p>
     <div class="feature-grid feature-grid-q9w8">
       <div class="feature-box feature-box-f0h1">
         <i class="fa-solid fa-solid-i1m6 fa-wand-magic-sparkles fa-wand-magic-sparkles-d0u8 feature-icon feature-icon-b0g2"></i>
         <h4>Intentional visuals</h4>
-        <p>Gradient glow frames, clean hierarchy, and focused messaging to spotlight your creatives.</p>
+        <p>Neon glows, bold hierarchy, and tight copy to hype your creatives without clutter.</p>
       </div>
       <div class="feature-box feature-box-f0h1">
         <i class="fa-solid fa-solid-i1m6 fa-gauge-high fa-gauge-high-t7l5 feature-icon feature-icon-b0g2"></i>
         <h4>Instant launch</h4>
-        <p>Lightweight HTML5 shells keep load times short and battery use lean across devices.</p>
+        <p>Lightweight builds snap open on desktop or mobile—perfect for quick peeks and campaigns.</p>
       </div>
       <div class="feature-box feature-box-f0h1">
         <i class="fa-solid fa-solid-i1m6 fa-shield-halved fa-shield-halved-y4r3 feature-icon feature-icon-b0g2"></i>
         <h4>Responsible by design</h4>
-        <p>18+ gating, plain-language disclaimers, and zero payment flows keep expectations clear.</p>
+        <p>18+ gating, loud disclaimers, and zero payment flows keep expectations crystal clear.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="jackpothub-cloud-about jackpothub-cloud-about-e2w5">
+<section id="about" class="megarushbean-com-about megarushbean-com-about-e2w5">
   <div class="container container-g1j0">
-    <div class="about-grid about-grid-n9s2">
-      <div class="about-visual about-visual-a0f9">
-        <img src="assets/herobackground01.webp" alt="JackpotHub hero collage">
+      <div class="about-grid about-grid-n9s2">
+        <div class="about-visual about-visual-a0f9">
+        <img src="assets/herobackground01.webp" alt="Megarush Bean hero collage">
       </div>
       <div class="about-text about-text-l5t2">
-        <h2 class="section-title section-title-p9a8">From calm Arctic to bold JackpotHub</h2>
+        <h2 class="section-title section-title-p9a8">Tour the Megarush Bean refresh</h2>
         <p>
-          We kept the minimal, low-friction spirit and tuned it for <strong>JackpotHub.cloud</strong>.
-          Expect fast loads and gentle motion, paired with a neon-gold palette and clearer calls-to-action.
+          We kept the minimal, low-friction spirit and tuned it for <strong>megarushbean.com</strong>.
+          Think quick loads, playful motion, and a copper-and-mint palette that shouts Megarush Bean without hinting at winnings.
         </p>
         <p>
-          Each page is tuned for campaigns, social casino style demos, and quick product previews. No downloads, no wallets,
-          just a focused lane to showcase what matters.
+          Each page is ready for campaigns, social casino style demos, and snackable previews with the Megarush Bean badge front and center.
+          No downloads, no wallets—just an energetic lane to show off the fun parts.
         </p>
-        <a href="#contact" class="jackpothub-cloud-btn jackpothub-cloud-btn-g5k6 primary primary-e8e2">Collaborate with us</a>
+        <a href="#contact" class="megarushbean-com-btn megarushbean-com-btn-g5k6 primary primary-e8e2">Collaborate with us</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- REVIEWS -->
-<section id="reviews" class="jackpothub-cloud-reviews jackpothub-cloud-reviews-g1w8">
+<section id="reviews" class="megarushbean-com-reviews megarushbean-com-reviews-g1w8">
   <div class="container container-g1j0">
     <h2 class="section-title section-title-p9a8 mb-1 mb-1-e5k0 text-center text-center-v3f6">What visitors say</h2>
-    <p class="section-sub section-sub-q2n7 text-center text-center-v3f6">Early testers on the rebrand.</p>
+    <p class="section-sub section-sub-q2n7 text-center text-center-v3f6">Quick takes from early visitors.</p>
     <div class="reviews-grid reviews-grid-j1j6">
       <div class="review-card review-card-f9q7">
-        <p class="review-text review-text-d7o9">“Gives me a calm pause between calls — polished, quick, and right to the point.”</p>
-        <h5 class="review-author review-author-g0v2">— L. Hart</h5>
+        <p class="review-text review-text-d7o9">“Feels like a neon coffee break — quick pop, clean layout, then I'm back to work.”</p>
+        <h5 class="review-author review-author-g0v2">— Jamie P.</h5>
       </div>
       <div class="review-card review-card-f9q7">
-        <p class="review-text review-text-d7o9">“Loads fast on my phone and the visuals stay clean. Perfect for a quick reset.”</p>
-        <h5 class="review-author review-author-g0v2">— Ana S.</h5>
+        <p class="review-text review-text-d7o9">“Loads in a snap on my phone. Bright, tidy, and easy to dip in and out.”</p>
+        <h5 class="review-author review-author-g0v2">— Nora V.</h5>
       </div>
       <div class="review-card review-card-f9q7">
-        <p class="review-text review-text-d7o9">“On mobile it just works — straightforward layout with no extra noise.”</p>
-        <h5 class="review-author review-author-g0v2">— Priya R.</h5>
+        <p class="review-text review-text-d7o9">“Mobile-first and fuss-free. The glow hits, the copy’s clear, and I'm never guessing.”</p>
+        <h5 class="review-author review-author-g0v2">— Malik T.</h5>
       </div>
       <div class="review-card review-card-f9q7">
-        <p class="review-text review-text-d7o9">“Minimal and refreshing. Exactly the kind of quick break I want without distractions.”</p>
-        <h5 class="review-author review-author-g0v2">— Dan K.</h5>
+        <p class="review-text review-text-d7o9">“Clean, punchy, and keeps the focus on the fun. Great for a quick reset between tasks.”</p>
+        <h5 class="review-author review-author-g0v2">— Casey L.</h5>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="jackpothub-cloud-contact jackpothub-cloud-contact-y3q1">
+<section id="contact" class="megarushbean-com-contact megarushbean-com-contact-y3q1">
   <div class="container container-g1j0">
     <h2 class="section-title section-title-p9a8 text-center text-center-v3f6 mb-1 mb-1-e5k0">Contact</h2>
-    <p class="section-sub section-sub-q2n7 text-center text-center-v3f6">Share feedback, request campaign slots, or ask for a custom embed.</p>
+    <p class="section-sub section-sub-q2n7 text-center text-center-v3f6">Tell us what to launch next, book campaign slots, or request a custom embed.</p>
 
     <div class="contact-grid contact-grid-x1h0">
       <div class="contact-info contact-info-v7t1">
         <h4>Get in touch</h4>
-        <p><strong>Email:</strong> <a href="mailto:hello@jackpothub.cloud" class="link-accent link-accent-t0s6">hello@jackpothub.cloud</a></p>
-        <p><strong>Business:</strong> JackpotHub Cloud</p>
+        <p><strong>Email:</strong> <a href="mailto:hello@megarushbean.com" class="link-accent link-accent-t0s6">hello@megarushbean.com</a></p>
+        <p><strong>Business:</strong> Megarush Bean Studio</p>
         <p><strong>Location:</strong> Remote-first studio</p>
         <p><strong>Hours:</strong> Monday–Friday, 9:00 AM – 5:00 PM (PST)</p>
         <p><strong>Support:</strong> Replies within 24–48 hours.</p>
@@ -727,7 +728,7 @@ img{max-width:100%; display:block}
         <input type="text" id="hubName" placeholder="Your name" required minlength="2" maxlength="60">
         <input type="email" id="hubEmail" placeholder="you@example.com" required>
         <textarea id="hubMessage" rows="5" placeholder="Your message" required></textarea>
-        <button type="submit" class="jackpothub-cloud-btn jackpothub-cloud-btn-g5k6 primary primary-e8e2">Send message</button>
+        <button type="submit" class="megarushbean-com-btn megarushbean-com-btn-g5k6 primary primary-e8e2">Send message</button>
         <p id="hubStatus" class="form-status form-status-s0n6" aria-live="polite"></p>
       </form>
     </div>
@@ -735,17 +736,17 @@ img{max-width:100%; display:block}
 </section>
 
 <!-- FOOTER -->
-<footer class="jackpothub-cloud-footer jackpothub-cloud-footer-y5k0">
+<footer class="megarushbean-com-footer megarushbean-com-footer-y5k0">
   <div class="container container-g1j0">
     <div class="footer-brand footer-brand-p9z8">
-      <img class="brand-logo brand-logo-c2e3" src="assets/img.png" alt="JackpotHub logo">
-      <span class="sr-only sr-only-b4d1">JackpotHub.cloud</span>
+      <img class="brand-logo brand-logo-c2e3" src="assets/img.png" alt="Megarush Bean logo">
+      <span class="sr-only sr-only-b4d1">megarushbean.com</span>
     </div>
 
     <div class="footer-disclaimer footer-disclaimer-r3t2">
       <h5 class="disclaimer-heading disclaimer-heading-w8s6"><i class="fas fas-c9r9 fa-snowflake fa-snowflake-c4q3 me-2 me-2-e8c6"></i> Responsible play notice</h5>
       <p>
-        <strong>JackpotHub.cloud</strong> provides free-to-play, social casino style digital experiences for adults aged
+        <strong>megarushbean.com</strong> provides free-to-play, social casino style digital experiences for adults aged
         <strong>18+</strong>. There are no monetary incentives or rewards. Please engage responsibly and take regular breaks
         for a healthy balance.
       </p>
@@ -761,13 +762,13 @@ img{max-width:100%; display:block}
     </ul>
 
     <p class="footer-copy footer-copy-c7h0">
-      © <span data-year></span> JackpotHub.cloud
+      © <span data-year></span> megarushbean.com
     </p>
   </div>
 </footer>
 
 <!-- SCROLL TO TOP -->
-<button id="hubScrollTop" class="jackpothub-cloud-scroll jackpothub-cloud-scroll-h7p4" aria-label="Scroll to top">
+<button id="hubScrollTop" class="megarushbean-com-scroll megarushbean-com-scroll-h7p4" aria-label="Scroll to top">
   <i class="fas fas-c9r9 fa-chevron-up fa-chevron-up-q5p4"></i>
 </button>
 
