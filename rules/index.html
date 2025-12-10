@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <title>Prizes — Zlottour Raffle</title>
-  <meta name="description" content="Grand prize details for Zlottour Raffle: $3,780 retail value package, only 995 tickets at $10 each, draw on December 26, 2025. 18+ responsible play.">
+  <title>Rules &amp; Regulations — Zlottour Raffle</title>
+  <meta name="description" content="Official rules for Zlottour Raffle: licence #465790, 995 tickets at $10, draw on Dec 26, 2025. Eligibility, prize details, draw process, and responsibilities.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -28,23 +28,9 @@
   --font-body: "Inter", system-ui, sans-serif;
 }
 *{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:var(--font-body);
-  background:
-    radial-gradient(circle at 12% 10%, rgba(154,123,255,0.16), transparent 32%),
-    radial-gradient(circle at 82% 18%, rgba(246,214,91,0.12), transparent 30%),
-    radial-gradient(circle at 50% 90%, rgba(108,205,255,0.14), transparent 30%),
-    linear-gradient(145deg, #0a0819 0%, #0d0a24 40%, #0f0c2c 100%);
-  color:var(--text);
-  line-height:1.65;
-  min-height:100vh;
-  -webkit-font-smoothing:antialiased;
-}
+body{margin:0; font-family:var(--font-body); background:radial-gradient(circle at 12% 10%, rgba(154,123,255,0.16), transparent 32%),radial-gradient(circle at 82% 18%, rgba(246,214,91,0.12), transparent 30%),radial-gradient(circle at 50% 90%, rgba(108,205,255,0.14), transparent 30%),linear-gradient(145deg, #0a0819 0%, #0d0a24 40%, #0f0c2c 100%); color:var(--text); line-height:1.65; min-height:100vh; -webkit-font-smoothing:antialiased}
 a{color:var(--accent); text-decoration:none; transition:color .18s ease, opacity .18s ease}
 a:hover{color:var(--secondary); opacity:0.92}
-img{max-width:100%; display:block}
-
 .container{width:min(1180px, 100% - 2.4rem); margin:0 auto}
 
 .topbar{position:sticky; top:0; z-index:80; background:rgba(10,8,25,0.9); backdrop-filter:blur(16px); border-bottom:1px solid var(--border); box-shadow:0 8px 30px rgba(0,0,0,0.35)}
@@ -73,20 +59,16 @@ img{max-width:100%; display:block}
 .hero-sub{color:var(--muted); margin:0 0 0.6rem; max-width:880px}
 .meta{color:var(--muted); font-weight:600; margin:0}
 
+.section{padding:2.4rem 0; max-width:980px; margin:0 auto}
 .card{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:1.4rem; box-shadow:var(--shadow); margin-bottom:1rem}
-.card h3{margin:0 0 0.35rem; color:var(--heading)}
-.card h4{margin:1.1rem 0 0.4rem; color:var(--heading)}
+.card h2{margin:0 0 0.6rem; color:var(--heading); font-size:1.6rem}
+.card h3{margin:0.8rem 0 0.4rem; color:var(--heading); font-size:1.2rem}
 .card p{margin:0 0 0.7rem; color:var(--muted)}
-.card ul{margin:0 0 0.6rem; padding-left:1.2rem; color:var(--muted)}
+.card ul, .card ol{margin:0 0 0.7rem 1.2rem; color:var(--muted); line-height:1.8}
 .card li{margin:0.25rem 0}
 
-.stats-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1rem; margin:1.4rem 0}
-.stat{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:1.2rem; text-align:center; box-shadow:var(--shadow)}
-.stat .num{font-family:var(--font-display); font-size:2.4rem; color:var(--accent); display:block}
-.stat .label{color:var(--muted)}
-
-.info-box{background:var(--panel-strong); border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:14px; padding:1.2rem; box-shadow:var(--shadow); margin:1.2rem 0}
-.info-box h4{margin:0 0 0.35rem; color:var(--heading)}
+.highlight{background:var(--panel-strong); border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:14px; padding:1.2rem; box-shadow:var(--shadow); margin:1.2rem 0; color:var(--muted)}
+.highlight strong{color:var(--heading)}
 
 .footer{background:linear-gradient(180deg, #0a0718, #080615); border-top:1px solid var(--border); padding:3rem 0 2.2rem; margin-top:3rem}
 .footer-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.2rem; margin-bottom:1.6rem}
@@ -130,7 +112,7 @@ img{max-width:100%; display:block}
         <a href="/#impact">About</a>
         <a href="/#how">How It Works</a>
         <a href="/prizes">Prizes</a>
-        <a href="/terms-and-conditions">Rules</a>
+        <a href="/rules">Rules</a>
         <a href="/#winners">Winners</a>
         <a href="/#contact">Contact</a>
         <a href="/faq">FAQ</a>
@@ -139,62 +121,131 @@ img{max-width:100%; display:block}
   </header>
 
   <main>
-    <section class="hero" id="prizes">
+    <section class="hero" id="rules">
       <div class="container hero-inner">
         <div>
-          <h1 class="hero-title">Grand Prize</h1>
-          <p class="hero-sub">Win the curated $3,780 retail value package. Only 995 tickets, $10 each. Draw date: December 26, 2025.</p>
-          <p class="meta">Licence #465790 • One winner • No cash substitute</p>
+          <h1 class="hero-title">Rules &amp; Regulations</h1>
+          <p class="hero-sub">Official terms and conditions for Zlottour Raffle, reflecting the ACA raffle structure.</p>
+          <p class="meta">Licence #465790 • 995 tickets • $10 per ticket • Draw: December 26, 2025</p>
         </div>
       </div>
     </section>
 
-    <section class="container" aria-labelledby="prize-details">
-      <div class="card" id="prize-details">
-        <h3>Prize package</h3>
-        <p>The package mirrors the ACA raffle bundle: a premium experience for outdoor enthusiasts with high-quality gear and accessories.</p>
+    <section class="section" aria-labelledby="rules-content">
+      <div class="highlight">
+        <p><strong>Licence Number:</strong> 465790</p>
+        <p><strong>Licensee:</strong> Zlottour Raffle</p>
+        <p><strong>Licence Term:</strong> September 26, 2025 - December 31, 2025</p>
+      </div>
 
-        <div class="stats-grid">
-          <div class="stat"><span class="num">$3,780</span><span class="label">Prize value</span></div>
-          <div class="stat"><span class="num">995</span><span class="label">Total tickets</span></div>
-          <div class="stat"><span class="num">$10</span><span class="label">Per ticket</span></div>
-          <div class="stat"><span class="num">1</span><span class="label">Grand prize winner</span></div>
-        </div>
+      <div class="card">
+        <h2>1. Eligibility</h2>
+        <p>To participate, you must:</p>
+        <ul>
+          <li>Be 18 years of age or older at the time of ticket purchase.</li>
+          <li>Be a resident of Alberta, Canada.</li>
+          <li>Not be an employee or immediate family member of Zlottour Raffle (licensee).</li>
+          <li>Comply with applicable Alberta Gaming, Liquor and Cannabis regulations.</li>
+        </ul>
+      </div>
 
-        <div class="info-box">
-          <h4>What’s included</h4>
-          <ul>
-            <li>Premium hunting/outdoor equipment and gear.</li>
-            <li>High-quality apparel and accessories.</li>
-            <li>Essential field equipment and add-ons.</li>
-            <li>Brand-new items curated for a standout experience.</li>
-          </ul>
-        </div>
+      <div class="card">
+        <h2>2. Ticket Information</h2>
+        <h3>Ticket Sales</h3>
+        <ul>
+          <li>Ticket price: $10.00 per ticket.</li>
+          <li>Total tickets available: 995 tickets.</li>
+          <li>Total value: $9,950.00.</li>
+          <li>Tickets are sold on a first-come, first-served basis.</li>
+          <li>Sales period: September 26, 2025 - December 26, 2025 (or until sold out).</li>
+        </ul>
+        <h3>Purchase Limits</h3>
+        <ul>
+          <li>No limit on the number of tickets per person.</li>
+          <li>Each ticket purchased increases your chances of winning.</li>
+          <li>All ticket sales are final—no refunds or exchanges.</li>
+        </ul>
+      </div>
 
-        <div class="info-box">
-          <h4>Odds and ticket limits</h4>
-          <p>With only 995 tickets issued, odds max out at 1 in 995. Tickets are first-come, first-served.</p>
-        </div>
+      <div class="card">
+        <h2>3. Prize Information</h2>
+        <ul>
+          <li>Grand Prize: $3,780.00 retail value prize package.</li>
+          <li>One (1) grand prize winner will be selected.</li>
+          <li>Prize must be accepted as awarded—no cash alternative.</li>
+          <li>Prize is not transferable.</li>
+          <li>Winner is responsible for any applicable taxes.</li>
+        </ul>
+      </div>
 
-        <div class="info-box">
-          <h4>Draw information</h4>
-          <p><strong>Draw date:</strong> December 26, 2025<br>
-             <strong>Location:</strong> Taber Community Hall, Taber, Alberta<br>
-             <strong>Licence number:</strong> 465790<br>
-             <strong>Licensee:</strong> Zlottour Raffle (mirroring ACA raffle format)</p>
-        </div>
+      <div class="card">
+        <h2>4. Draw Details</h2>
+        <h3>Draw Date and Location</h3>
+        <ul>
+          <li>Date: December 26, 2025.</li>
+          <li>Location: Taber Community Hall, Taber, Alberta.</li>
+          <li>The draw will be conducted in accordance with Alberta Gaming regulations.</li>
+          <li>The draw will be supervised by authorized representatives.</li>
+        </ul>
+        <h3>Winner Selection</h3>
+        <ul>
+          <li>One ticket will be randomly drawn from all eligible entries.</li>
+          <li>The winner will be contacted within 5 business days using the contact information provided at purchase.</li>
+          <li>Winner must respond within 30 days of notification.</li>
+          <li>If the winner cannot be contacted or does not respond within 30 days, an alternate winner may be selected.</li>
+        </ul>
+      </div>
 
-        <div class="info-box">
-          <h4>Prize rules</h4>
-          <p><strong>Prize type:</strong> Physical goods package<br>
-             <strong>Substitution:</strong> No cash alternative is offered.</p>
-        </div>
+      <div class="card">
+        <h2>5. Winner Responsibilities</h2>
+        <ul>
+          <li>Winner must provide valid government-issued photo identification.</li>
+          <li>Winner must sign a Declaration of Compliance and Release form.</li>
+          <li>Winner must correctly answer a skill-testing question.</li>
+          <li>Winner's name may be published on our website and promotional materials.</li>
+          <li>Winner must arrange prize collection within 60 days of notification.</li>
+        </ul>
+      </div>
 
-        <div class="info-box">
-          <h4>Ready to play?</h4>
-          <p>Secure your entries now and support conservation-themed initiatives.</p>
-          <a class="btn primary" href="/#contact">Purchase tickets</a>
-        </div>
+      <div class="card">
+        <h2>6. Use of Proceeds</h2>
+        <p>All net proceeds from this raffle will be used for conservation-aligned initiatives inspired by the ACA Pheasant Release Program.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. General Conditions</h2>
+        <ul>
+          <li>Zlottour Raffle reserves the right to cancel or modify the raffle if circumstances beyond our control make it necessary.</li>
+          <li>In the event of cancellation, all ticket purchasers will receive a full refund.</li>
+          <li>All decisions made by Zlottour Raffle regarding this raffle are final.</li>
+          <li>This raffle is subject to all applicable federal, provincial, and municipal laws and regulations.</li>
+          <li>By purchasing a ticket, participants agree to be bound by these rules and regulations.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>8. Privacy and Personal Information</h2>
+        <ul>
+          <li>Personal information collected will be used solely for raffle administration and winner notification.</li>
+          <li>Information will be handled in accordance with our Privacy Policy.</li>
+          <li>Winner's name and city may be published for promotional purposes.</li>
+          <li>Personal information will not be sold or shared with third parties.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>9. Limitation of Liability</h2>
+        <p>Zlottour Raffle, its directors, officers, employees, and agents shall not be liable for:</p>
+        <ul>
+          <li>Any injury, loss, or damage arising from participation in this raffle.</li>
+          <li>Any technical malfunctions or failures.</li>
+          <li>Any errors in ticket processing or draw procedures.</li>
+          <li>Any disputes regarding prize value or quality.</li>
+        </ul>
+      </div>
+
+      <div class="highlight">
+        <p><strong>Questions?</strong> For questions about these rules and regulations, please <a href="/#contact">contact us</a> or review our <a href="/faq">FAQ page</a>.</p>
       </div>
     </section>
   </main>
@@ -214,7 +265,7 @@ img{max-width:100%; display:block}
           <ul>
             <li><a href="/privacy">Privacy Policy</a></li>
             <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
-            <li><a href="/#winners">Responsible Gaming</a></li>
+            <li><a href="/rules">Rules</a></li>
           </ul>
         </div>
         <div>

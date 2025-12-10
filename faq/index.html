@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <title>Prizes — Zlottour Raffle</title>
-  <meta name="description" content="Grand prize details for Zlottour Raffle: $3,780 retail value package, only 995 tickets at $10 each, draw on December 26, 2025. 18+ responsible play.">
+  <title>FAQ — Zlottour Raffle</title>
+  <meta name="description" content="FAQ for Zlottour Raffle: $10 tickets (995 total), $3,780 prize, draw on Dec 26, 2025, licence #465790. Eligibility, odds, notification, refunds, and proceeds.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -28,23 +28,9 @@
   --font-body: "Inter", system-ui, sans-serif;
 }
 *{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:var(--font-body);
-  background:
-    radial-gradient(circle at 12% 10%, rgba(154,123,255,0.16), transparent 32%),
-    radial-gradient(circle at 82% 18%, rgba(246,214,91,0.12), transparent 30%),
-    radial-gradient(circle at 50% 90%, rgba(108,205,255,0.14), transparent 30%),
-    linear-gradient(145deg, #0a0819 0%, #0d0a24 40%, #0f0c2c 100%);
-  color:var(--text);
-  line-height:1.65;
-  min-height:100vh;
-  -webkit-font-smoothing:antialiased;
-}
+body{margin:0; font-family:var(--font-body); background:radial-gradient(circle at 12% 10%, rgba(154,123,255,0.16), transparent 32%),radial-gradient(circle at 82% 18%, rgba(246,214,91,0.12), transparent 30%),radial-gradient(circle at 50% 90%, rgba(108,205,255,0.14), transparent 30%),linear-gradient(145deg, #0a0819 0%, #0d0a24 40%, #0f0c2c 100%); color:var(--text); line-height:1.65; min-height:100vh; -webkit-font-smoothing:antialiased}
 a{color:var(--accent); text-decoration:none; transition:color .18s ease, opacity .18s ease}
 a:hover{color:var(--secondary); opacity:0.92}
-img{max-width:100%; display:block}
-
 .container{width:min(1180px, 100% - 2.4rem); margin:0 auto}
 
 .topbar{position:sticky; top:0; z-index:80; background:rgba(10,8,25,0.9); backdrop-filter:blur(16px); border-bottom:1px solid var(--border); box-shadow:0 8px 30px rgba(0,0,0,0.35)}
@@ -73,20 +59,13 @@ img{max-width:100%; display:block}
 .hero-sub{color:var(--muted); margin:0 0 0.6rem; max-width:880px}
 .meta{color:var(--muted); font-weight:600; margin:0}
 
-.card{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:1.4rem; box-shadow:var(--shadow); margin-bottom:1rem}
-.card h3{margin:0 0 0.35rem; color:var(--heading)}
-.card h4{margin:1.1rem 0 0.4rem; color:var(--heading)}
-.card p{margin:0 0 0.7rem; color:var(--muted)}
-.card ul{margin:0 0 0.6rem; padding-left:1.2rem; color:var(--muted)}
-.card li{margin:0.25rem 0}
+.faq-section{padding:2.4rem 0; max-width:980px; margin:0 auto}
+.faq-item{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:1.2rem; box-shadow:var(--shadow); margin-bottom:0.9rem}
+.faq-item h3{margin:0 0 0.4rem; color:var(--heading); font-size:1.2rem}
+.faq-item p{margin:0; color:var(--muted)}
 
-.stats-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1rem; margin:1.4rem 0}
-.stat{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:1.2rem; text-align:center; box-shadow:var(--shadow)}
-.stat .num{font-family:var(--font-display); font-size:2.4rem; color:var(--accent); display:block}
-.stat .label{color:var(--muted)}
-
-.info-box{background:var(--panel-strong); border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:14px; padding:1.2rem; box-shadow:var(--shadow); margin:1.2rem 0}
-.info-box h4{margin:0 0 0.35rem; color:var(--heading)}
+.highlight{background:var(--panel-strong); border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:14px; padding:1.2rem; box-shadow:var(--shadow); margin:1.2rem 0; color:var(--muted)}
+.highlight strong{color:var(--heading)}
 
 .footer{background:linear-gradient(180deg, #0a0718, #080615); border-top:1px solid var(--border); padding:3rem 0 2.2rem; margin-top:3rem}
 .footer-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.2rem; margin-bottom:1.6rem}
@@ -130,7 +109,7 @@ img{max-width:100%; display:block}
         <a href="/#impact">About</a>
         <a href="/#how">How It Works</a>
         <a href="/prizes">Prizes</a>
-        <a href="/terms-and-conditions">Rules</a>
+        <a href="/rules">Rules</a>
         <a href="/#winners">Winners</a>
         <a href="/#contact">Contact</a>
         <a href="/faq">FAQ</a>
@@ -139,62 +118,70 @@ img{max-width:100%; display:block}
   </header>
 
   <main>
-    <section class="hero" id="prizes">
+    <section class="hero" id="faq">
       <div class="container hero-inner">
         <div>
-          <h1 class="hero-title">Grand Prize</h1>
-          <p class="hero-sub">Win the curated $3,780 retail value package. Only 995 tickets, $10 each. Draw date: December 26, 2025.</p>
-          <p class="meta">Licence #465790 • One winner • No cash substitute</p>
+          <h1 class="hero-title">Frequently Asked Questions</h1>
+          <p class="hero-sub">Answers to the most common questions about the Zlottour Raffle, mirroring the ACA raffle details.</p>
+          <p class="meta">Licence #465790 • Draw: Dec 26, 2025 • 995 tickets at $10</p>
         </div>
       </div>
     </section>
 
-    <section class="container" aria-labelledby="prize-details">
-      <div class="card" id="prize-details">
-        <h3>Prize package</h3>
-        <p>The package mirrors the ACA raffle bundle: a premium experience for outdoor enthusiasts with high-quality gear and accessories.</p>
+    <section class="faq-section" aria-labelledby="faq-list">
+      <div class="faq-item">
+        <h3>How much are tickets and how many are available?</h3>
+        <p>Tickets are $10 each. There are only 995 tickets issued for this raffle.</p>
+      </div>
 
-        <div class="stats-grid">
-          <div class="stat"><span class="num">$3,780</span><span class="label">Prize value</span></div>
-          <div class="stat"><span class="num">995</span><span class="label">Total tickets</span></div>
-          <div class="stat"><span class="num">$10</span><span class="label">Per ticket</span></div>
-          <div class="stat"><span class="num">1</span><span class="label">Grand prize winner</span></div>
-        </div>
+      <div class="faq-item">
+        <h3>Who can buy a ticket?</h3>
+        <p>You must be 18+ and a resident of Alberta, Canada. Employees and immediate family of the licensee are not eligible.</p>
+      </div>
 
-        <div class="info-box">
-          <h4>What’s included</h4>
-          <ul>
-            <li>Premium hunting/outdoor equipment and gear.</li>
-            <li>High-quality apparel and accessories.</li>
-            <li>Essential field equipment and add-ons.</li>
-            <li>Brand-new items curated for a standout experience.</li>
-          </ul>
-        </div>
+      <div class="faq-item">
+        <h3>Is there a limit to how many tickets I can purchase?</h3>
+        <p>No. You can buy multiple tickets; each ticket increases your chances of winning.</p>
+      </div>
 
-        <div class="info-box">
-          <h4>Odds and ticket limits</h4>
-          <p>With only 995 tickets issued, odds max out at 1 in 995. Tickets are first-come, first-served.</p>
-        </div>
+      <div class="faq-item">
+        <h3>When and where is the draw?</h3>
+        <p>The draw is scheduled for December 26, 2025 at Taber Community Hall, Taber, Alberta. It will follow Alberta Gaming regulations.</p>
+      </div>
 
-        <div class="info-box">
-          <h4>Draw information</h4>
-          <p><strong>Draw date:</strong> December 26, 2025<br>
-             <strong>Location:</strong> Taber Community Hall, Taber, Alberta<br>
-             <strong>Licence number:</strong> 465790<br>
-             <strong>Licensee:</strong> Zlottour Raffle (mirroring ACA raffle format)</p>
-        </div>
+      <div class="faq-item">
+        <h3>What is the prize?</h3>
+        <p>One grand prize package valued at $3,780 retail. The prize is awarded as-is with no cash alternative and is not transferable.</p>
+      </div>
 
-        <div class="info-box">
-          <h4>Prize rules</h4>
-          <p><strong>Prize type:</strong> Physical goods package<br>
-             <strong>Substitution:</strong> No cash alternative is offered.</p>
-        </div>
+      <div class="faq-item">
+        <h3>What are my odds of winning?</h3>
+        <p>Maximum odds are 1 in 995, depending on total tickets sold.</p>
+      </div>
 
-        <div class="info-box">
-          <h4>Ready to play?</h4>
-          <p>Secure your entries now and support conservation-themed initiatives.</p>
-          <a class="btn primary" href="/#contact">Purchase tickets</a>
-        </div>
+      <div class="faq-item">
+        <h3>How will the winner be notified?</h3>
+        <p>We will contact the winner within 5 business days using the information provided at purchase. The winner must respond within 30 days.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do I need to be present at the draw?</h3>
+        <p>No, you do not need to be present. We will contact the winner directly and post the winner on our site.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are ticket sales refundable?</h3>
+        <p>All ticket sales are final—no refunds or exchanges.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Where do the proceeds go?</h3>
+        <p>Proceeds support conservation-focused initiatives inspired by the ACA Pheasant Release Program.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What if I have more questions?</h3>
+        <p>Reach out via <a href="mailto:hello@zlottour.com">hello@zlottour.com</a> or visit the contact section for assistance.</p>
       </div>
     </section>
   </main>
@@ -213,8 +200,8 @@ img{max-width:100%; display:block}
           <h4>Legal</h4>
           <ul>
             <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
-            <li><a href="/#winners">Responsible Gaming</a></li>
+            <li><a href="/rules">Rules</a></li>
+            <li><a href="/prizes">Prizes</a></li>
           </ul>
         </div>
         <div>
@@ -242,4 +229,3 @@ img{max-width:100%; display:block}
   <script src="../assets/main.js" defer></script>
 </body>
 </html>
-
