@@ -4,26 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <title>Zlottour — Weekly social casino drops</title>
-  <meta name="description" content="Zlottour mirrors the WINS experience with a fresh brand. Fast, free-to-play social casino style drops built for campaigns and demos. 18+ only, no cash prizes.">
+  <title>Zlottour Lotto — Weekly Casino & Betting Contests</title>
+  <meta name="description" content="Zlottour Lotto mirrors the WINS experience: weekly contests, bold payouts, and responsible play. Join, secure your entries, and track the countdown to the next cash prizes.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
 :root{
-  --bg: #080617;
+  --bg: #0d0b21;
   --panel: rgba(255,255,255,0.06);
   --panel-strong: rgba(255,255,255,0.1);
-  --text: #e9e9ff;
-  --muted: #c2c3df;
+  --text: #e8e9ff;
+  --muted: #c6c8e6;
   --heading: #ffffff;
   --accent: #f6d65b;
   --secondary: #9a7bff;
   --primary: #130f2e;
-  --border: rgba(255,255,255,0.12);
+  --border: rgba(255,255,255,0.14);
   --radius: 16px;
-  --shadow: 0 22px 60px rgba(0,0,0,0.6);
+  --shadow: 0 24px 70px rgba(0,0,0,0.55);
   --font-display: "Bebas Neue", "Inter", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
 }
@@ -92,9 +92,7 @@ img{max-width:100%; display:block}
   transition:background .15s ease, color .15s ease;
 }
 .nav-links a:hover{background:var(--panel); color:var(--accent)}
-.nav-links .btn{
-  padding:0.75rem 1rem;
-}
+.nav-links .btn{padding:0.72rem 1rem}
 .menu-toggle{
   display:none;
   background:var(--panel);
@@ -169,17 +167,27 @@ img{max-width:100%; display:block}
   margin:0 0 0.6rem;
   color:var(--heading);
 }
+.hero-prize-stack{display:flex; flex-direction:column; gap:0.25rem; margin:0 0 0.8rem}
+.hero-prize{
+  display:inline-block;
+  font-family:var(--font-display);
+  font-size:clamp(2.6rem, 6vw, 4.4rem);
+  color:var(--accent);
+  letter-spacing:1px;
+  text-shadow:0 6px 28px rgba(0,0,0,0.4);
+}
+.hero-prize-sub{
+  font-size:clamp(1.3rem, 3vw, 2rem);
+  font-weight:800;
+  letter-spacing:1px;
+  color:var(--heading);
+}
 .hero-sub{
   margin:0 0 1rem;
   color:var(--muted);
   max-width:720px;
 }
-.hero-cta{
-  display:flex;
-  gap:0.8rem;
-  flex-wrap:wrap;
-  margin:1rem 0 0.8rem;
-}
+.hero-cta{display:flex; gap:0.8rem; flex-wrap:wrap; margin:1rem 0 0.8rem}
 .pill{
   display:inline-flex;
   align-items:center;
@@ -192,11 +200,7 @@ img{max-width:100%; display:block}
   font-weight:600;
   font-size:0.95rem;
 }
-.pill.accent{
-  background:rgba(246,214,91,0.14);
-  color:var(--accent);
-  border-color:rgba(246,214,91,0.35);
-}
+.pill.accent{background:rgba(246,214,91,0.14); color:var(--accent); border-color:rgba(246,214,91,0.35)}
 .badges{display:flex; flex-wrap:wrap; gap:0.6rem; margin:0.2rem 0 1.1rem}
 
 .countdown-card{
@@ -207,16 +211,8 @@ img{max-width:100%; display:block}
   padding:1rem 1.2rem;
   box-shadow:var(--shadow);
 }
-.countdown-title{
-  font-weight:700;
-  color:var(--heading);
-  margin:0 0 0.6rem;
-}
-.countdown{
-  display:flex;
-  gap:0.8rem;
-  flex-wrap:wrap;
-}
+.countdown-title{font-weight:700; color:var(--heading); margin:0 0 0.6rem}
+.countdown{display:flex; gap:0.8rem; flex-wrap:wrap}
 .countdown .slot{
   flex:1 1 120px;
   min-width:120px;
@@ -226,19 +222,8 @@ img{max-width:100%; display:block}
   text-align:center;
   padding:0.8rem 0.6rem;
 }
-.countdown .value{
-  display:block;
-  font-family:var(--font-display);
-  font-size:2.4rem;
-  color:var(--accent);
-}
-.countdown small{
-  display:block;
-  color:var(--muted);
-  letter-spacing:1px;
-  text-transform:uppercase;
-  font-weight:700;
-}
+.countdown .value{display:block; font-family:var(--font-display); font-size:2.4rem; color:var(--accent)}
+.countdown small{display:block; color:var(--muted); letter-spacing:1px; text-transform:uppercase; font-weight:700}
 
 .hero-visual{
   position:relative;
@@ -256,365 +241,95 @@ img{max-width:100%; display:block}
   filter:blur(30px);
   z-index:0;
 }
-.hero-visual img{
-  position:relative;
-  z-index:1;
-  border-radius:14px;
-  box-shadow:0 16px 44px rgba(0,0,0,0.55);
-}
-.hero-label{
-  position:absolute;
-  top:14px;
-  right:14px;
-  z-index:2;
-  background:rgba(10,8,25,0.8);
-  border:1px solid var(--border);
-  padding:0.4rem 0.8rem;
-  border-radius:999px;
-  color:var(--muted);
-  font-weight:700;
-}
+.hero-visual img{position:relative; z-index:1; border-radius:14px; box-shadow:0 16px 44px rgba(0,0,0,0.55)}
+.hero-label{position:absolute; top:14px; right:14px; z-index:2; background:rgba(10,8,25,0.8); border:1px solid var(--border); padding:0.4rem 0.8rem; border-radius:999px; color:var(--muted); font-weight:700}
 
-.section-head{
-  text-align:center;
-  margin-bottom:1.6rem;
-}
-.section-eyebrow{
-  text-transform:uppercase;
-  letter-spacing:2px;
-  color:var(--muted);
-  margin:0;
-  font-size:0.9rem;
-}
-.section-title{
-  font-family:var(--font-display);
-  font-size:clamp(1.9rem, 4vw, 2.6rem);
-  color:var(--heading);
-  margin:0.25rem 0;
-}
-.section-sub{
-  margin:0;
-  color:var(--muted);
-}
+.section-head{text-align:center; margin-bottom:1.6rem}
+.section-eyebrow{text-transform:uppercase; letter-spacing:2px; color:var(--muted); margin:0; font-size:0.9rem}
+.section-title{font-family:var(--font-display); font-size:clamp(1.9rem, 4vw, 2.6rem); color:var(--heading); margin:0.25rem 0}
+.section-sub{margin:0; color:var(--muted)}
 
-.packages{
-  padding:3.2rem 0 2.6rem;
-}
-.package-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-  gap:1rem;
-}
-.package-card{
-  position:relative;
-  background:linear-gradient(155deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-  border:1px solid var(--border);
-  border-radius:16px;
-  padding:1.2rem;
-  box-shadow:var(--shadow);
-  overflow:hidden;
-  transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease;
-}
-.package-card:hover{
-  transform:translateY(-4px);
-  border-color:rgba(246,214,91,0.4);
-  box-shadow:0 18px 48px rgba(0,0,0,0.55);
-}
-.package-card .ribbon{
-  position:absolute;
-  top:12px;
-  right:12px;
-  background:var(--accent);
-  color:#0b0920;
-  padding:0.32rem 0.7rem;
-  border-radius:999px;
-  font-weight:800;
-  letter-spacing:0.5px;
-}
-.package-name{
-  margin:0 0 0.3rem;
-  font-size:1.15rem;
-  color:var(--heading);
-  font-weight:800;
-}
-.package-value{
-  font-family:var(--font-display);
-  font-size:2.6rem;
-  color:var(--secondary);
-  margin:0;
-}
-.package-note{
-  margin:0 0 0.8rem;
-  color:var(--muted);
-}
-.package-list{
-  list-style:none;
-  padding:0;
-  margin:0 0 1rem;
-  color:var(--text);
-}
-.package-list li{
-  display:flex;
-  align-items:center;
-  gap:0.45rem;
-  margin:0.3rem 0;
-  color:var(--muted);
-}
+.packages{padding:3.2rem 0 2.6rem}
+.package-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1rem}
+.package-card{position:relative; background:linear-gradient(155deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); border:1px solid var(--border); border-radius:16px; padding:1.2rem; box-shadow:var(--shadow); overflow:hidden; transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease}
+.package-card:hover{transform:translateY(-4px); border-color:rgba(246,214,91,0.4); box-shadow:0 18px 48px rgba(0,0,0,0.55)}
+.package-card .ribbon{position:absolute; top:12px; right:12px; background:var(--accent); color:#0b0920; padding:0.32rem 0.7rem; border-radius:999px; font-weight:800; letter-spacing:0.5px}
+.package-name{margin:0 0 0.3rem; font-size:1.15rem; color:var(--heading); font-weight:800}
+.package-value{font-family:var(--font-display); font-size:2.6rem; color:var(--secondary); margin:0}
+.package-note{margin:0 0 0.8rem; color:var(--muted)}
+.package-list{list-style:none; padding:0; margin:0 0 1rem; color:var(--text)}
+.package-list li{display:flex; align-items:center; gap:0.45rem; margin:0.3rem 0; color:var(--muted)}
 .package-list li i{color:var(--accent)}
 
-.responsible{
-  padding:2.8rem 0;
-}
-.info-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-  gap:1rem;
-}
-.info-card{
-  background:var(--panel);
-  border:1px solid var(--border);
-  border-radius:16px;
-  padding:1.2rem;
-  box-shadow:var(--shadow);
-}
-.info-card h4{
-  margin:0 0 0.45rem;
-  color:var(--heading);
-}
-.info-card p{
-  margin:0;
-  color:var(--muted);
-}
+.regulatory{padding:2.6rem 0}
+.reg-card{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:1.2rem; box-shadow:var(--shadow); margin-bottom:1rem}
+.reg-card h3{margin:0 0 0.4rem; color:var(--heading)}
+.reg-card p{margin:0 0 0.6rem; color:var(--muted)}
+.res-links{display:flex; flex-wrap:wrap; gap:0.6rem; margin:0; padding:0; list-style:none}
+.res-links a{color:var(--accent); font-weight:600}
+.res-links a:hover{color:var(--secondary)}
 
-.contact{
-  padding:3rem 0 3.4rem;
-}
-.contact-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:1.2rem;
-  align-items:start;
-}
-.contact-card,
-.contact-form-card{
-  background:var(--panel);
-  border:1px solid var(--border);
-  border-radius:16px;
-  padding:1.2rem;
-  box-shadow:var(--shadow);
-}
+.contact{padding:3rem 0 3.4rem}
+.contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; align-items:start}
+.contact-card,.contact-form-card{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:1.2rem; box-shadow:var(--shadow)}
 .contact-card h3{margin:0 0 0.4rem; color:var(--heading)}
 .contact-card p{margin:0.2rem 0; color:var(--muted)}
 .contact-card strong{color:var(--heading)}
-.contact-form-card form{
-  display:flex;
-  flex-direction:column;
-  gap:0.75rem;
-}
-.contact-form-card input,
-.contact-form-card textarea{
-  width:100%;
-  padding:0.85rem 0.95rem;
-  border-radius:12px;
-  border:1px solid var(--border);
-  background:rgba(255,255,255,0.03);
-  color:var(--text);
-  font-size:1rem;
-  transition:border .16s ease, box-shadow .16s ease;
-}
-.contact-form-card input:focus,
-.contact-form-card textarea:focus{
-  outline:none;
-  border-color:rgba(154,123,255,0.5);
-  box-shadow:0 0 0 3px rgba(154,123,255,0.18);
-}
-.form-status{
-  min-height:20px;
-  color:var(--muted);
-}
+.contact-form-card form{display:flex; flex-direction:column; gap:0.75rem}
+.contact-form-card input,.contact-form-card textarea{width:100%; padding:0.85rem 0.95rem; border-radius:12px; border:1px solid var(--border); background:rgba(255,255,255,0.03); color:var(--text); font-size:1rem; transition:border .16s ease, box-shadow .16s ease}
+.contact-form-card input:focus,.contact-form-card textarea:focus{outline:none; border-color:rgba(154,123,255,0.5); box-shadow:0 0 0 3px rgba(154,123,255,0.18)}
+.form-status{min-height:20px; color:var(--muted)}
 .form-status.success{color:#9ff2c0}
 .form-status.error{color:#ff9b73}
 
-.footer{
-  background:linear-gradient(180deg, #0a0718, #080615);
-  border-top:1px solid var(--border);
-  padding:3rem 0 2.2rem;
-}
-.footer-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-  gap:1.2rem;
-  margin-bottom:1.6rem;
-}
-.footer h4{
-  margin:0 0 0.5rem;
-  color:var(--heading);
-}
-.footer p{
-  margin:0;
-  color:var(--muted);
-}
-.footer ul{
-  list-style:none;
-  padding:0;
-  margin:0;
-}
-.footer li{
-  margin:0.35rem 0;
-}
-.footer-copy{
-  text-align:center;
-  color:var(--muted);
-  margin:0;
-}
+.footer{background:linear-gradient(180deg, #0a0718, #080615); border-top:1px solid var(--border); padding:3rem 0 2.2rem}
+.footer-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.2rem; margin-bottom:1.6rem}
+.footer h4{margin:0 0 0.5rem; color:var(--heading)}
+.footer p{margin:0; color:var(--muted)}
+.footer ul{list-style:none; padding:0; margin:0}
+.footer li{margin:0.35rem 0}
+.footer-copy{text-align:center; color:var(--muted); margin:0}
 
-.sticky-ribbon{
-  position:fixed;
-  bottom:12px;
-  left:50%;
-  transform:translateX(-50%);
-  background:rgba(12,10,30,0.9);
-  border:1px solid var(--border);
-  border-radius:999px;
-  padding:0.55rem 1rem;
-  display:flex;
-  align-items:center;
-  gap:0.8rem;
-  box-shadow:0 12px 30px rgba(0,0,0,0.45);
-  backdrop-filter:blur(10px);
-  z-index:60;
-  flex-wrap:wrap;
-}
-.sticky-ribbon .item{
-  display:flex;
-  align-items:center;
-  gap:0.35rem;
-  color:var(--muted);
-  font-weight:600;
-}
+.sticky-ribbon{position:fixed; bottom:12px; left:50%; transform:translateX(-50%); background:rgba(12,10,30,0.9); border:1px solid var(--border); border-radius:999px; padding:0.55rem 1rem; display:flex; align-items:center; gap:0.8rem; box-shadow:0 12px 30px rgba(0,0,0,0.45); backdrop-filter:blur(10px); z-index:60; flex-wrap:wrap}
+.sticky-ribbon .item{display:flex; align-items:center; gap:0.35rem; color:var(--muted); font-weight:600}
 .sticky-ribbon .item i{color:var(--accent)}
 
-.scroll-top{
-  position:fixed;
-  right:18px;
-  bottom:70px;
-  width:46px;
-  height:46px;
-  border-radius:50%;
-  border:none;
-  background:var(--accent);
-  color:#0b0920;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  cursor:pointer;
-  box-shadow:0 14px 34px rgba(0,0,0,0.55);
-  opacity:0;
-  visibility:hidden;
-  transition:all .16s;
-  z-index:65;
-}
+.scroll-top{position:fixed; right:18px; bottom:70px; width:46px; height:46px; border-radius:50%; border:none; background:var(--accent); color:#0b0920; display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:0 14px 34px rgba(0,0,0,0.55); opacity:0; visibility:hidden; transition:all .16s; z-index:65}
 .scroll-top.show{opacity:1; visibility:visible}
 .scroll-top:hover{background:var(--secondary); color:#fff}
 
-.zlottour-modal{
-  position:fixed;
-  inset:0;
-  display:none;
-  align-items:center;
-  justify-content:center;
-  background:rgba(0,0,0,0.78);
-  backdrop-filter:blur(8px);
-  z-index:120;
-  padding:1rem;
-}
+.zlottour-modal{position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.78); backdrop-filter:blur(8px); z-index:120; padding:1rem}
 .zlottour-modal.active{display:flex}
-.modal-card{
-  background:linear-gradient(155deg, #110d24, #0c0a1c);
-  border:1px solid var(--border);
-  border-radius:18px;
-  width:min(520px, 100%);
-  padding:1.4rem;
-  color:var(--text);
-  position:relative;
-  box-shadow:var(--shadow);
-}
-.modal-card h3{
-  margin:0 0 0.3rem;
-  font-family:var(--font-display);
-  font-size:2rem;
-}
+.modal-card{background:linear-gradient(155deg, #110d24, #0c0a1c); border:1px solid var(--border); border-radius:18px; width:min(520px, 100%); padding:1.4rem; color:var(--text); position:relative; box-shadow:var(--shadow)}
+.modal-card h3{margin:0 0 0.3rem; font-family:var(--font-display); font-size:2rem}
 .modal-card p{margin:0 0 0.8rem; color:var(--muted)}
-.modal-close{
-  position:absolute;
-  top:12px;
-  right:12px;
-  background:var(--panel);
-  border:1px solid var(--border);
-  color:var(--muted);
-  border-radius:10px;
-  padding:0.4rem 0.6rem;
-  cursor:pointer;
-}
-.modal-form{
-  display:flex;
-  flex-direction:column;
-  gap:0.7rem;
-}
-.modal-form input{
-  padding:0.85rem 0.95rem;
-  border-radius:12px;
-  border:1px solid var(--border);
-  background:rgba(255,255,255,0.03);
-  color:var(--text);
-}
-.modal-form input:focus{
-  outline:none;
-  border-color:rgba(246,214,91,0.4);
-  box-shadow:0 0 0 3px rgba(246,214,91,0.15);
-}
-.modal-status{
-  min-height:22px;
-  color:var(--muted);
-  font-weight:600;
-}
+.modal-close{position:absolute; top:12px; right:12px; background:var(--panel); border:1px solid var(--border); color:var(--muted); border-radius:10px; padding:0.4rem 0.6rem; cursor:pointer}
+.modal-form{display:flex; flex-direction:column; gap:0.7rem}
+.modal-form input{padding:0.85rem 0.95rem; border-radius:12px; border:1px solid var(--border); background:rgba(255,255,255,0.03); color:var(--text)}
+.modal-form input:focus{outline:none; border-color:rgba(246,214,91,0.4); box-shadow:0 0 0 3px rgba(246,214,91,0.15)}
+.modal-status{min-height:22px; color:var(--muted); font-weight:600}
 .modal-status.success{color:#9ff2c0}
 .modal-status.error{color:#ff9b73}
 
-.sr-only{
-  position:absolute;
-  width:1px;
-  height:1px;
-  padding:0;
-  margin:-1px;
-  overflow:hidden;
-  clip:rect(0,0,0,0);
-  border:0;
-}
+.sticky-footer{position:fixed; bottom:0; left:0; right:0; background:rgba(10,8,25,0.92); border-top:1px solid var(--border); backdrop-filter:blur(10px); z-index:70; padding:0.65rem 0}
+.sticky-footer .container{display:flex; align-items:center; gap:1rem; justify-content:center; flex-wrap:wrap; font-weight:700; color:var(--muted)}
+.sticky-footer .badge{display:flex; align-items:center; gap:0.35rem; background:var(--panel); border:1px solid var(--border); padding:0.45rem 0.8rem; border-radius:12px}
+
+.sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0}
 
 @media (max-width: 960px){
   .hero-grid{grid-template-columns:1fr}
   .hero-visual{order:-1}
-  .nav-links{
-    position:absolute;
-    left:0;
-    right:0;
-    top:100%;
-    background:rgba(10,8,25,0.96);
-    padding:0.8rem 1.2rem 1rem;
-    flex-direction:column;
-    align-items:flex-start;
-    border-bottom:1px solid var(--border);
-    display:none;
-  }
+  .nav-links{position:absolute; left:0; right:0; top:100%; background:rgba(10,8,25,0.96); padding:0.8rem 1.2rem 1rem; flex-direction:column; align-items:flex-start; border-bottom:1px solid var(--border); display:none}
   .nav-links.open{display:flex}
   .menu-toggle{display:inline-flex}
 }
 @media (max-width: 720px){
   .countdown .slot{min-width:48%}
   .contact-grid{grid-template-columns:1fr}
-  .sticky-ribbon{bottom:8px; border-radius:16px}
+  .sticky-ribbon{bottom:62px; border-radius:16px}
   .brand img{width:112px}
+  .sticky-footer{padding:0.8rem 0}
 }
   </style>
 </head>
@@ -623,20 +338,18 @@ img{max-width:100%; display:block}
     <div class="container nav-wrap">
       <a class="brand" href="/">
         <img src="assets/img.png" alt="Zlottour logo">
-        <span class="brand-name">Zlottour</span>
+        <span class="brand-name">Zlottour Lotto</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Toggle menu" data-menu-toggle>
         <i class="fa-solid fa-bars"></i>
       </button>
       <nav class="nav-links" id="navMenu">
         <a href="#home">Home</a>
-        <a href="#packages">Packages</a>
-        <a href="#responsible">Responsible play</a>
+        <a href="#responsible">Responsible Gaming</a>
         <a href="#contact">Contact</a>
-        <a href="/privacy-policy">Privacy</a>
-        <a href="/terms-and-conditions">Terms</a>
-        <a href="#" class="btn ghost" data-login-btn><i class="fa-solid fa-user"></i> Log in</a>
-        <a href="#" class="btn primary" data-signup-btn><i class="fa-solid fa-bolt"></i> Start now</a>
+        <a href="/privacy">Privacy</a>
+        <a href="#" class="btn ghost" data-login-btn><i class="fa-solid fa-user"></i> Log In</a>
+        <a href="#" class="btn primary" data-signup-btn><i class="fa-solid fa-bolt"></i> Sign Up</a>
       </nav>
     </div>
   </header>
@@ -645,49 +358,36 @@ img{max-width:100%; display:block}
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Weekly feature drops</p>
-          <h1 class="hero-title">Compete & cruise through fresh Zlottour drops built in the WINS style.</h1>
-          <p class="hero-sub">
-            Glow-heavy visuals, bold typography, and ready-to-run campaigns—rebranded for Zlottour with the same electric energy.
-            Free-to-play social casino style previews, 18+ only, no cash prizes.
-          </p>
+          <p class="eyebrow">Weekly contests</p>
+          <h1 class="hero-title">COMPETE &amp; WIN BIG EVERY WEEK</h1>
+          <div class="hero-prize-stack">
+            <span class="hero-prize">Up to $154,000</span>
+            <span class="hero-prize-sub">CASH PRIZES WEEKLY</span>
+          </div>
+          <div class="countdown-card">
+            <p class="countdown-title">Next draw starts in</p>
+            <div class="countdown" id="countdown">
+              <div class="slot"><span class="value" id="countdownDays">27</span><small>Days</small></div>
+              <div class="slot"><span class="value" id="countdownHours">00</span><small>Hours</small></div>
+              <div class="slot"><span class="value" id="countdownMinutes">00</span><small>Minutes</small></div>
+              <div class="slot"><span class="value" id="countdownSeconds">00</span><small>Seconds</small></div>
+            </div>
+          </div>
           <div class="hero-cta">
-            <a href="#" class="btn primary" data-signup-btn>Join now &amp; start a session</a>
-            <a href="#packages" class="btn ghost">See the packages</a>
+            <a href="#" class="btn primary" data-signup-btn>Join Now &amp; Start Winning</a>
+            <a href="#packages" class="btn ghost">See Packages</a>
           </div>
           <div class="badges">
-            <span class="pill accent"><i class="fa-solid fa-burst"></i> WINS-inspired glow</span>
-            <span class="pill"><i class="fa-solid fa-shield"></i> 18+ entertainment</span>
+            <span class="pill accent"><i class="fa-solid fa-burst"></i> Weekly drops</span>
+            <span class="pill"><i class="fa-solid fa-ticket"></i> Secure entries</span>
             <span class="pill"><i class="fa-solid fa-mobile-screen-button"></i> Mobile-first</span>
-          </div>
-
-          <div class="countdown-card">
-            <p class="countdown-title">Next Zlottour feature drop begins in</p>
-            <div class="countdown" id="countdown">
-              <div class="slot">
-                <span class="value" id="countdownDays">00</span>
-                <small>Days</small>
-              </div>
-              <div class="slot">
-                <span class="value" id="countdownHours">00</span>
-                <small>Hours</small>
-              </div>
-              <div class="slot">
-                <span class="value" id="countdownMinutes">00</span>
-                <small>Minutes</small>
-              </div>
-              <div class="slot">
-                <span class="value" id="countdownSeconds">00</span>
-                <small>Seconds</small>
-              </div>
-            </div>
           </div>
         </div>
 
         <div class="hero-visual">
           <div class="halo"></div>
-          <img src="assets/herobackground01.webp" alt="Zlottour hero collage">
-          <span class="hero-label"><i class="fa-solid fa-circle-info"></i> Entertainment only</span>
+          <img src="assets/herobackground01.webp" alt="Zlottour Lotto hero">
+          <span class="hero-label"><i class="fa-solid fa-circle-info"></i> Real cash prizes</span>
         </div>
       </div>
     </section>
@@ -695,84 +395,85 @@ img{max-width:100%; display:block}
     <section class="packages" id="packages">
       <div class="container">
         <div class="section-head">
-          <p class="section-eyebrow">Pick your pace</p>
-          <h2 class="section-title">Packages that mirror WINS, re-badged for Zlottour</h2>
-          <p class="section-sub">Choose a bundle that fits your campaign preview. All experiences are free-to-play, no cash prizes.</p>
+          <p class="section-eyebrow">Pick your package</p>
+          <h2 class="section-title">Ready-to-play bundles</h2>
+          <p class="section-sub">Choose the plan that matches your style and start playing today.</p>
         </div>
 
         <div class="package-grid">
           <article class="package-card">
-            <h3 class="package-name">Starter Spark</h3>
-            <p class="package-value">50 spins</p>
-            <p class="package-note">Quick teaser, best for lightweight campaigns.</p>
+            <h3 class="package-name">Starter Pack</h3>
+            <p class="package-value">50 Free Spin</p>
+            <p class="package-note">Min. Dep. $15</p>
             <ul class="package-list">
-              <li><i class="fa-solid fa-check"></i> No deposits or prizes</li>
-              <li><i class="fa-solid fa-check"></i> Mobile + desktop preview</li>
-              <li><i class="fa-solid fa-check"></i> Basic age gate (18+)</li>
+              <li><i class="fa-solid fa-check"></i> Instant confirmation</li>
+              <li><i class="fa-solid fa-check"></i> Mobile + desktop</li>
+              <li><i class="fa-solid fa-check"></i> Great for first-timers</li>
             </ul>
-            <a href="#" class="btn primary" data-signup-btn>Get started</a>
+            <a href="#" class="btn primary" data-signup-btn>Get Started</a>
           </article>
 
           <article class="package-card">
             <h3 class="package-name">Pro Player</h3>
-            <p class="package-value">75 spins</p>
-            <p class="package-note">More volume for A/B creative flights.</p>
+            <p class="package-value">75 Free Spin</p>
+            <p class="package-note">Min. Dep. $20</p>
             <ul class="package-list">
-              <li><i class="fa-solid fa-check"></i> Fast-load IFRAME embed</li>
-              <li><i class="fa-solid fa-check"></i> Custom CTA buttons</li>
-              <li><i class="fa-solid fa-check"></i> Safety copy baked in</li>
+              <li><i class="fa-solid fa-check"></i> Priority updates</li>
+              <li><i class="fa-solid fa-check"></i> More chances weekly</li>
+              <li><i class="fa-solid fa-check"></i> Email receipts</li>
             </ul>
-            <a href="#" class="btn primary" data-signup-btn>Claim slot</a>
+            <a href="#" class="btn primary" data-signup-btn>Get Started</a>
           </article>
 
           <article class="package-card">
             <span class="ribbon">Most popular</span>
             <h3 class="package-name">VIP Master</h3>
-            <p class="package-value">150 spins</p>
-            <p class="package-note">Full glow treatment plus tighter messaging.</p>
+            <p class="package-value">150 Free Spin</p>
+            <p class="package-note">Min. Dep. $30</p>
             <ul class="package-list">
-              <li><i class="fa-solid fa-check"></i> Custom headline + accent colors</li>
-              <li><i class="fa-solid fa-check"></i> Sticky compliance ribbon</li>
-              <li><i class="fa-solid fa-check"></i> Dedicated support queue</li>
+              <li><i class="fa-solid fa-check"></i> Bonus streak tracking</li>
+              <li><i class="fa-solid fa-check"></i> Early draw reminders</li>
+              <li><i class="fa-solid fa-check"></i> Dedicated support</li>
             </ul>
-            <a href="#" class="btn primary" data-signup-btn>Book a drop</a>
+            <a href="#" class="btn primary" data-signup-btn>Claim Offer</a>
           </article>
 
           <article class="package-card">
             <h3 class="package-name">Elite Bundle</h3>
-            <p class="package-value">100 spins</p>
-            <p class="package-note">Polished mid-tier option for weekly rotations.</p>
+            <p class="package-value">100 Free Spin</p>
+            <p class="package-note">Min. Dep. $25</p>
             <ul class="package-list">
-              <li><i class="fa-solid fa-check"></i> Hero rewrite for your angle</li>
-              <li><i class="fa-solid fa-check"></i> Timer to drive urgency</li>
-              <li><i class="fa-solid fa-check"></i> Responsible-play spotlight</li>
+              <li><i class="fa-solid fa-check"></i> Balanced weekly play</li>
+              <li><i class="fa-solid fa-check"></i> Countdown synced</li>
+              <li><i class="fa-solid fa-check"></i> Responsible play tools</li>
             </ul>
-            <a href="#" class="btn primary" data-signup-btn>Lock it in</a>
+            <a href="#" class="btn primary" data-signup-btn>Get Started</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="responsible" id="responsible">
+    <section class="regulatory" id="responsible">
       <div class="container">
         <div class="section-head">
-          <p class="section-eyebrow">Play it safe</p>
-          <h2 class="section-title">Responsible play built in from the start</h2>
-          <p class="section-sub">Every Zlottour drop keeps the WINS-style guardrails but rebranded for our network.</p>
+          <p class="section-eyebrow">Compliance</p>
+          <h2 class="section-title">Regulatory Details</h2>
+          <p class="section-sub">Operating entity, license numbers, and responsible gaming resources.</p>
         </div>
-        <div class="info-grid">
-          <div class="info-card">
-            <h4><i class="fa-solid fa-ban me-2"></i> No real-money flows</h4>
-            <p>Experiences are free-to-play social casino style previews. No deposits, wagers, or cash-out options.</p>
-          </div>
-          <div class="info-card">
-            <h4><i class="fa-solid fa-shield-halved me-2"></i> 18+ gating</h4>
-            <p>Age badge, safety copy, and sticky ribbon keep expectations clear for all visitors.</p>
-          </div>
-          <div class="info-card">
-            <h4><i class="fa-solid fa-bolt me-2"></i> Fast-loading embeds</h4>
-            <p>Lean builds, mobile-first iframes, and compressed assets mirror the performance of wins-eocf.com.</p>
-          </div>
+        <div class="reg-card">
+          <h3>Regulatory Details</h3>
+          <p>Operating entity: Elion Olc Colimo Foundation, located at 129, Triq Fleur-De-Lys, Birkirkara, BKR 9066, Malta. Authorized by the AGCO of Ontario under registration OP1499101, operating through an agreement with iGaming Ontario. Also authorized by AGLC under registration 843961, effective: September 28, 2025.</p>
+          <p>ON: AGCO License #OP1499101 | AB: AGLC License #843961 | BC: License #144798 | QC: Kahnawake License #939</p>
+        </div>
+        <div class="reg-card">
+          <h3>Play Safe, Play Smart</h3>
+          <p>Our platform is dedicated to responsible gaming practices. Review our Responsible Gaming guidelines to ensure a secure and enjoyable experience.</p>
+          <ul class="res-links">
+            <li><a href="https://aglc.ca/gaming/responsible-gambling" target="_blank" rel="noopener noreferrer">AGLC Responsible Gambling</a></li>
+            <li><a href="https://gamesenseab.ca/" target="_blank" rel="noopener noreferrer">GameSense Alberta</a></li>
+            <li><a href="https://www.gambleaware.org/" target="_blank" rel="noopener noreferrer">BeGambleAware</a></li>
+            <li><a href="https://selfexclusion.ca/" target="_blank" rel="noopener noreferrer">Self-Exclusion Program</a></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -781,14 +482,14 @@ img{max-width:100%; display:block}
       <div class="container">
         <div class="section-head">
           <p class="section-eyebrow">Talk with us</p>
-          <h2 class="section-title">Need a custom Zlottour drop?</h2>
-          <p class="section-sub">Reach out for campaign tweaks, embeds, or compliance copy edits.</p>
+          <h2 class="section-title">Need support or a promo slot?</h2>
+          <p class="section-sub">Get in touch for campaigns, verifications, or custom bundles.</p>
         </div>
         <div class="contact-grid">
           <div class="contact-card">
             <h3>Direct line</h3>
             <p><strong>Email:</strong> <a href="mailto:hello@zlottour.com">hello@zlottour.com</a></p>
-            <p><strong>Business:</strong> Zlottour Studio</p>
+            <p><strong>Business:</strong> Zlottour Lotto</p>
             <p><strong>Hours:</strong> Mon–Fri, 9:00 AM – 5:00 PM (PST)</p>
             <p><strong>Response:</strong> Usually within 24–48 hours</p>
             <p><strong>Location:</strong> Remote-first team</p>
@@ -798,7 +499,7 @@ img{max-width:100%; display:block}
             <form id="hubForm" novalidate>
               <input type="text" id="hubName" placeholder="Your name" required minlength="2" maxlength="60">
               <input type="email" id="hubEmail" placeholder="you@example.com" required>
-              <textarea id="hubMessage" rows="5" placeholder="What can we launch for you?" required></textarea>
+              <textarea id="hubMessage" rows="5" placeholder="What can we help with?" required></textarea>
               <button type="submit" class="btn primary">Send message</button>
               <p id="hubStatus" class="form-status" aria-live="polite"></p>
             </form>
@@ -814,38 +515,34 @@ img{max-width:100%; display:block}
         <div>
           <div class="brand">
             <img src="assets/img.png" alt="Zlottour logo">
-            <span class="brand-name">Zlottour</span>
+            <span class="brand-name">Zlottour Lotto</span>
           </div>
-          <p>Weekly WINS-inspired drops rebuilt for Zlottour. Entertainment-only previews with clear, responsible messaging.</p>
+          <p>Weekly WINS-inspired lotto contests rebuilt for Zlottour. Clear prize calls, countdowns, and responsible play.</p>
         </div>
         <div>
           <h4>Legal</h4>
           <ul>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
-            <li><a href="/disclaimer">Disclaimer</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/policy">Terms &amp; Conditions</a></li>
+            <li><a href="#responsible">Responsible Gaming</a></li>
           </ul>
         </div>
         <div>
-          <h4>Support</h4>
+          <h4>Help Center</h4>
           <ul>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="/play">Play previews</a></li>
-            <li><a href="/privacy-policy">Cookie notice</a></li>
+            <li><a href="#contact">Get in Touch</a></li>
           </ul>
         </div>
       </div>
-      <p class="footer-copy">
-        © <span data-year></span> zlottour.com — Free-to-play social casino style previews. 18+ only, no monetary prizes.
-      </p>
+      <p class="footer-copy">© <span data-year></span> Zlottour Lotto | AGCO #OP1499101 | AGLC #843961</p>
     </div>
   </footer>
 
   <div class="sticky-ribbon">
-    <div class="item"><i class="fa-solid fa-circle-exclamation"></i> 18+ entertainment</div>
-    <div class="item"><i class="fa-solid fa-shield-check"></i> Responsible play</div>
-    <div class="item"><i class="fa-solid fa-ban"></i> No deposits</div>
-    <div class="item"><i class="fa-solid fa-bolt-lightning"></i> Fast loads</div>
+    <div class="item"><i class="fa-solid fa-circle-exclamation"></i> 18+</div>
+    <div class="item"><i class="fa-solid fa-shield"></i> Responsible Gaming</div>
+    <div class="item"><i class="fa-solid fa-ticket"></i> Verified Entries</div>
+    <div class="item"><i class="fa-solid fa-bolt"></i> Fast Checkout</div>
   </div>
 
   <button id="hubScrollTop" class="scroll-top" aria-label="Scroll to top">
@@ -855,8 +552,8 @@ img{max-width:100%; display:block}
   <div class="zlottour-modal" id="signupModal">
     <div class="modal-card">
       <button class="modal-close" type="button" data-modal-close aria-label="Close signup"><i class="fa-solid fa-xmark"></i></button>
-      <h3>Sign up</h3>
-      <p>Join Zlottour to launch your next social casino style drop.</p>
+      <h3>Sign Up</h3>
+      <p>Join Zlottour Lotto and enter the next draw.</p>
       <form id="signupForm" class="modal-form">
         <input type="text" id="signupName" placeholder="Full name" required>
         <input type="email" id="signupEmail" placeholder="you@example.com" required>
@@ -870,14 +567,22 @@ img{max-width:100%; display:block}
   <div class="zlottour-modal" id="loginModal">
     <div class="modal-card">
       <button class="modal-close" type="button" data-modal-close aria-label="Close login"><i class="fa-solid fa-xmark"></i></button>
-      <h3>Log in</h3>
-      <p>Access your saved Zlottour drops.</p>
+      <h3>Log In</h3>
+      <p>Welcome back to Zlottour Lotto.</p>
       <form id="loginForm" class="modal-form">
         <input type="email" id="loginEmail" placeholder="you@example.com" required>
         <input type="password" id="loginPassword" placeholder="Password" required>
         <button type="submit" class="btn primary">Log in</button>
         <p id="loginStatus" class="modal-status" aria-live="polite"></p>
       </form>
+    </div>
+  </div>
+
+  <div class="sticky-footer">
+    <div class="container">
+      <div class="badge"><span class="age-number">19+</span></div>
+      <div class="badge"><i class="fa-solid fa-shield-check"></i> Responsible Gaming</div>
+      <div class="badge"><i class="fa-solid fa-certificate"></i> AGCO #OP1499101 | AGLC #843961</div>
     </div>
   </div>
 
