@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <title>Zlottour Lotto — Weekly Casino & Betting Contests</title>
-  <meta name="description" content="Zlottour Lotto mirrors the WINS experience: weekly contests, bold payouts, and responsible play. Join, secure your entries, and track the countdown to the next cash prizes.">
+  <title>Zlottour Raffle — Weekly Raffle Contests & Cash Prizes</title>
+  <meta name="description" content="Zlottour Raffle mirrors the WINS experience with weekly raffle contests, bold payouts, and responsible play. Join, secure entries, and track the countdown to the next cash prizes.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -298,8 +298,8 @@ img{max-width:100%; display:block}
 .scroll-top.show{opacity:1; visibility:visible}
 .scroll-top:hover{background:var(--secondary); color:#fff}
 
-.zlottour-modal{position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.78); backdrop-filter:blur(8px); z-index:120; padding:1rem}
-.zlottour-modal.active{display:flex}
+.Zlottour-modal{position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.78); backdrop-filter:blur(8px); z-index:120; padding:1rem}
+.Zlottour-modal.active{display:flex}
 .modal-card{background:linear-gradient(155deg, #110d24, #0c0a1c); border:1px solid var(--border); border-radius:18px; width:min(520px, 100%); padding:1.4rem; color:var(--text); position:relative; box-shadow:var(--shadow)}
 .modal-card h3{margin:0 0 0.3rem; font-family:var(--font-display); font-size:2rem}
 .modal-card p{margin:0 0 0.8rem; color:var(--muted)}
@@ -333,12 +333,12 @@ img{max-width:100%; display:block}
 }
   </style>
 </head>
-<body class="zlottour">
+<body class="Zlottour">
   <header class="topbar">
     <div class="container nav-wrap">
       <a class="brand" href="/">
         <img src="assets/img.png" alt="Zlottour logo">
-        <span class="brand-name">Zlottour Lotto</span>
+        <span class="brand-name">Zlottour Raffle</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Toggle menu" data-menu-toggle>
         <i class="fa-solid fa-bars"></i>
@@ -386,7 +386,7 @@ img{max-width:100%; display:block}
 
         <div class="hero-visual">
           <div class="halo"></div>
-          <img src="assets/herobackground02.png" alt="Zlottour Lotto hero">
+          <img src="assets/herobackground02.png" alt="Zlottour Raffle hero">
           <span class="hero-label"><i class="fa-solid fa-circle-info"></i> Real cash prizes</span>
         </div>
       </div>
@@ -489,7 +489,7 @@ img{max-width:100%; display:block}
           <div class="contact-card">
             <h3>Direct line</h3>
             <p><strong>Email:</strong> <a href="mailto:hello@zlottour.com">hello@zlottour.com</a></p>
-            <p><strong>Business:</strong> Zlottour Lotto</p>
+            <p><strong>Business:</strong> Zlottour Raffle</p>
             <p><strong>Hours:</strong> Mon–Fri, 9:00 AM – 5:00 PM (PST)</p>
             <p><strong>Response:</strong> Usually within 24–48 hours</p>
             <p><strong>Location:</strong> Remote-first team</p>
@@ -515,9 +515,9 @@ img{max-width:100%; display:block}
         <div>
           <div class="brand">
             <img src="assets/img.png" alt="Zlottour logo">
-            <span class="brand-name">Zlottour Lotto</span>
+            <span class="brand-name">Zlottour Raffle</span>
           </div>
-          <p>Weekly WINS-inspired lotto contests rebuilt for Zlottour. Clear prize calls, countdowns, and responsible play.</p>
+          <p>Weekly WINS-inspired Raffle contests rebuilt for Zlottour. Clear prize calls, countdowns, and responsible play.</p>
         </div>
         <div>
           <h4>Legal</h4>
@@ -534,7 +534,7 @@ img{max-width:100%; display:block}
           </ul>
         </div>
       </div>
-      <p class="footer-copy">© <span data-year></span> Zlottour Lotto | AGCO #OP1499101 | AGLC #843961</p>
+      <p class="footer-copy">© <span data-year></span> Zlottour Raffle | AGCO #OP1499101 | AGLC #843961</p>
     </div>
   </footer>
 
@@ -549,11 +549,11 @@ img{max-width:100%; display:block}
     <i class="fa-solid fa-chevron-up"></i>
   </button>
 
-  <div class="zlottour-modal" id="signupModal">
+  <div class="Zlottour-modal" id="signupModal">
     <div class="modal-card">
       <button class="modal-close" type="button" data-modal-close aria-label="Close signup"><i class="fa-solid fa-xmark"></i></button>
       <h3>Sign Up</h3>
-      <p>Join Zlottour Lotto and enter the next draw.</p>
+      <p>Join Zlottour Raffle and enter the next draw.</p>
       <form id="signupForm" class="modal-form">
         <input type="text" id="signupName" placeholder="Full name" required>
         <input type="email" id="signupEmail" placeholder="you@example.com" required>
@@ -564,11 +564,11 @@ img{max-width:100%; display:block}
     </div>
   </div>
 
-  <div class="zlottour-modal" id="loginModal">
+  <div class="Zlottour-modal" id="loginModal">
     <div class="modal-card">
       <button class="modal-close" type="button" data-modal-close aria-label="Close login"><i class="fa-solid fa-xmark"></i></button>
       <h3>Log In</h3>
-      <p>Welcome back to Zlottour Lotto.</p>
+      <p>Welcome back to Zlottour Raffle.</p>
       <form id="loginForm" class="modal-form">
         <input type="email" id="loginEmail" placeholder="you@example.com" required>
         <input type="password" id="loginPassword" placeholder="Password" required>
@@ -589,3 +589,5 @@ img{max-width:100%; display:block}
   <script src="assets/main.js" defer></script>
 </body>
 </html>
+
+
