@@ -6,6 +6,13 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <title>Zlottour Raffle — Compete &amp; Win Big Every Week</title>
   <meta name="description" content="Compete weekly with Zlottour Raffle. Up to $154,000 cash prizes, current $3,780 licensed draw with 995 tickets at $10, draw on Dec 26, 2025. 18+ responsible play.">
+  <meta property="og:title" content="Zlottour Raffle — Compete &amp; Win Big Every Week">
+  <meta property="og:description" content="Licensed raffle: up to $154,000 cash prizes weekly. Current $3,780 draw, 995 tickets at $10, draw Dec 26, 2025. 18+ responsible play.">
+  <meta property="og:image" content="/assets/herobackground02.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zlottour.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="/assets/herobackground02.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -265,6 +272,21 @@ img{max-width:100%; display:block}
 .package-list{list-style:none; padding:0; margin:0 0 1rem; color:var(--text)}
 .package-list li{display:flex; align-items:center; gap:0.45rem; margin:0.3rem 0; color:var(--muted)}
 .package-list li i{color:var(--accent)}
+.grand-prize-wrap{display:grid; grid-template-columns:1.2fr 0.8fr; gap:1.2rem; align-items:stretch}
+.grand-card{position:relative; padding:1.6rem; border-radius:18px; background:radial-gradient(circle at 20% 20%, rgba(246,214,91,0.16), transparent 50%), radial-gradient(circle at 90% 10%, rgba(154,123,255,0.14), transparent 40%), linear-gradient(155deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); border:1px solid var(--border); box-shadow:var(--shadow); overflow:hidden}
+.grand-card::after{content:""; position:absolute; inset:0; background:radial-gradient(circle at 70% 80%, rgba(154,123,255,0.14), transparent 50%); pointer-events:none}
+.grand-card h3{margin:0 0 0.45rem; color:var(--heading); font-size:1.4rem}
+.grand-card .value{font-family:var(--font-display); font-size:3rem; color:var(--accent); margin:0 0 0.3rem; letter-spacing:1px}
+.grand-card .sub{color:var(--muted); margin:0 0 0.9rem; font-weight:600}
+.grand-card .pitch{color:var(--text); font-weight:700; margin:0 0 1rem}
+.cta-stack{display:flex; flex-wrap:wrap; gap:0.75rem; align-items:center}
+.btn.fun{padding:1rem 2.1rem; font-size:1.05rem; background:linear-gradient(120deg, var(--accent), var(--secondary)); color:#0b0920; box-shadow:0 16px 40px rgba(0,0,0,0.5); border:1px solid rgba(246,214,91,0.6)}
+.btn.fun:hover{transform:translateY(-3px) scale(1.01); box-shadow:0 20px 48px rgba(0,0,0,0.58)}
+.stat-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:0.7rem; height:100%}
+.stat-box{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:1rem; box-shadow:var(--shadow); text-align:left}
+.stat-box .label{color:var(--muted); font-weight:700; letter-spacing:0.5px; text-transform:uppercase; font-size:0.85rem; margin:0 0 0.35rem}
+.stat-box .num{font-family:var(--font-display); font-size:2.1rem; color:var(--accent); margin:0}
+.stat-box .hint{color:var(--muted); margin:0.2rem 0 0}
 
 .regulatory{padding:2.6rem 0}
 .reg-card{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:1.2rem; box-shadow:var(--shadow); margin-bottom:1rem}
@@ -404,22 +426,44 @@ img{max-width:100%; display:block}
       <div class="container">
         <div class="section-head">
           <p class="section-eyebrow">Grand prize</p>
-          <h2 class="section-title">One $3,780 package is up for grabs</h2>
-          <p class="section-sub">Inspired by ACA Raffle: limited tickets, licensed draw, and a single winner.</p>
+          <h2 class="section-title">Limited tickets. One epic $3,780 prize.</h2>
+          <p class="section-sub">A vivid, licensed raffle experience inspired by ACA—built to stand out and easy to enter.</p>
         </div>
 
-        <div class="package-grid">
-          <article class="package-card">
-            <h3 class="package-name">Prize overview</h3>
-            <p class="package-value">$3,780 value</p>
-            <p class="package-note">Ultimate experience package</p>
-            <ul class="package-list">
-              <li><i class="fa-solid fa-check"></i> Retail value: $3,780</li>
-              <li><i class="fa-solid fa-check"></i> Only 995 tickets issued</li>
-              <li><i class="fa-solid fa-check"></i> $10 per ticket</li>
-            </ul>
-            <a href="#how" class="btn primary" data-signup-btn>Get your tickets</a>
+        <div class="grand-prize-wrap">
+          <article class="grand-card">
+            <h3>Prize overview</h3>
+            <p class="value">$3,780 value</p>
+            <p class="sub">Only 995 tickets • $10 each • Licence #465790</p>
+            <p class="pitch">Think flagship gear, premium apparel, and field-ready accessories curated for a single lucky winner.</p>
+            <div class="cta-stack">
+              <a href="#" class="btn fun" data-signup-btn><i class="fa-solid fa-bolt"></i> Get Tickets Now</a>
+              <span class="pill accent"><i class="fa-solid fa-clock"></i> Draw: Dec 26, 2025</span>
+            </div>
           </article>
+
+          <div class="stat-grid">
+            <div class="stat-box">
+              <p class="label">Ticket pool</p>
+              <p class="num">995</p>
+              <p class="hint">Maximum odds: 1 in 995</p>
+            </div>
+            <div class="stat-box">
+              <p class="label">Price per ticket</p>
+              <p class="num">$10</p>
+              <p class="hint">First-come, first-served</p>
+            </div>
+            <div class="stat-box">
+              <p class="label">Winner count</p>
+              <p class="num">1</p>
+              <p class="hint">One grand prize package</p>
+            </div>
+            <div class="stat-box">
+              <p class="label">Draw date</p>
+              <p class="num">Dec 26</p>
+              <p class="hint">2025 • Licensed &amp; posted</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

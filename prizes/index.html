@@ -86,6 +86,22 @@ img{max-width:100%; display:block}
 .stat .num{font-family:var(--font-display); font-size:2.4rem; color:var(--accent); display:block}
 .stat .label{color:var(--muted)}
 
+.grand-prize-wrap{display:grid; grid-template-columns:1.2fr 0.8fr; gap:1.2rem; align-items:stretch; margin:0.8rem 0 0}
+.grand-card{position:relative; padding:1.6rem; border-radius:18px; background:radial-gradient(circle at 20% 20%, rgba(246,214,91,0.16), transparent 50%), radial-gradient(circle at 90% 10%, rgba(154,123,255,0.14), transparent 40%), linear-gradient(155deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); border:1px solid var(--border); box-shadow:var(--shadow); overflow:hidden}
+.grand-card::after{content:""; position:absolute; inset:0; background:radial-gradient(circle at 70% 80%, rgba(154,123,255,0.14), transparent 50%); pointer-events:none}
+.grand-card h3{margin:0 0 0.45rem; color:var(--heading); font-size:1.4rem}
+.grand-card .value{font-family:var(--font-display); font-size:3rem; color:var(--accent); margin:0 0 0.3rem; letter-spacing:1px}
+.grand-card .sub{color:var(--muted); margin:0 0 0.9rem; font-weight:600}
+.grand-card .pitch{color:var(--text); font-weight:700; margin:0 0 1rem}
+.cta-stack{display:flex; flex-wrap:wrap; gap:0.75rem; align-items:center}
+.btn.fun{padding:1rem 2.1rem; font-size:1.05rem; background:linear-gradient(120deg, var(--accent), var(--secondary)); color:#0b0920; box-shadow:0 16px 40px rgba(0,0,0,0.5); border:1px solid rgba(246,214,91,0.6)}
+.btn.fun:hover{transform:translateY(-3px) scale(1.01); box-shadow:0 20px 48px rgba(0,0,0,0.58)}
+.stat-marketing{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:0.7rem; height:100%}
+.stat-box{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:1rem; box-shadow:var(--shadow); text-align:left}
+.stat-box .label{color:var(--muted); font-weight:700; letter-spacing:0.5px; text-transform:uppercase; font-size:0.85rem; margin:0 0 0.35rem}
+.stat-box .num{font-family:var(--font-display); font-size:2.1rem; color:var(--accent); margin:0}
+.stat-box .hint{color:var(--muted); margin:0.2rem 0 0}
+
 .info-box{background:var(--panel-strong); border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:14px; padding:1.2rem; box-shadow:var(--shadow); margin:1.2rem 0}
 .info-box h4{margin:0 0 0.35rem; color:var(--heading)}
 
@@ -152,14 +168,40 @@ img{max-width:100%; display:block}
 
     <section class="container" aria-labelledby="prize-details">
       <div class="card" id="prize-details">
-        <h3>Prize package</h3>
-        <p>The package mirrors the ACA raffle bundle: a premium experience for outdoor enthusiasts with high-quality gear and accessories.</p>
+        <div class="grand-prize-wrap">
+          <article class="grand-card">
+            <h3>Prize overview</h3>
+            <p class="value">$3,780 package</p>
+            <p class="sub">995 tickets • $10 each • Licence #465790</p>
+            <p class="pitch">A spotlight-ready bundle with premium gear, apparel, and accessories—curated for one winner and designed to feel unforgettable.</p>
+            <div class="cta-stack">
+              <a class="btn fun" href="#" data-signup-btn><i class="fa-solid fa-bolt"></i> Get Tickets Now</a>
+              <span class="pill accent"><i class="fa-solid fa-clock"></i> Draw: Dec 26, 2025</span>
+            </div>
+          </article>
 
-        <div class="stats-grid">
-          <div class="stat"><span class="num">$3,780</span><span class="label">Prize value</span></div>
-          <div class="stat"><span class="num">995</span><span class="label">Total tickets</span></div>
-          <div class="stat"><span class="num">$10</span><span class="label">Per ticket</span></div>
-          <div class="stat"><span class="num">1</span><span class="label">Grand prize winner</span></div>
+          <div class="stat-marketing">
+            <div class="stat-box">
+              <p class="label">Ticket pool</p>
+              <p class="num">995</p>
+              <p class="hint">Max odds 1 in 995</p>
+            </div>
+            <div class="stat-box">
+              <p class="label">Per ticket</p>
+              <p class="num">$10</p>
+              <p class="hint">First-come, first-served</p>
+            </div>
+            <div class="stat-box">
+              <p class="label">Prize value</p>
+              <p class="num">$3,780</p>
+              <p class="hint">Single winner package</p>
+            </div>
+            <div class="stat-box">
+              <p class="label">Draw day</p>
+              <p class="num">Dec 26</p>
+              <p class="hint">2025 • Taber, Alberta</p>
+            </div>
+          </div>
         </div>
 
         <div class="info-box">
@@ -194,7 +236,7 @@ img{max-width:100%; display:block}
         <div class="info-box">
           <h4>Ready to play?</h4>
           <p>Secure your entries now and support conservation-themed initiatives.</p>
-          <a class="btn primary" href="/#contact">Purchase tickets</a>
+          <a class="btn fun" href="#" data-signup-btn>Purchase tickets</a>
         </div>
       </div>
     </section>
