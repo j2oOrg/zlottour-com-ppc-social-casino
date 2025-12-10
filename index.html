@@ -4,209 +4,187 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <title>Megarush Bean — Fast, free-to-play social casino vibes</title>
-  <meta name="description" content="Megarush Bean (zlottour.com) is a lively, free-to-play hub for social casino style browser capsules. Instant access, 18+ only, no deposits or prizes.">
+  <title>Zlottour — Weekly social casino drops</title>
+  <meta name="description" content="Zlottour mirrors the WINS experience with a fresh brand. Fast, free-to-play social casino style drops built for campaigns and demos. 18+ only, no cash prizes.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
 :root{
-  --bg: #04130d;
-  --panel: rgba(14,33,24,0.78);
-  --panel-strong: rgba(18,44,32,0.9);
-  --text: #e9f6ed;
-  --muted: #b1c8b7;
-  --heading: #f5ffee;
-  --accent: #f28c38;
-  --accent-2: #7cf0a0;
+  --bg: #080617;
+  --panel: rgba(255,255,255,0.06);
+  --panel-strong: rgba(255,255,255,0.1);
+  --text: #e9e9ff;
+  --muted: #c2c3df;
+  --heading: #ffffff;
+  --accent: #f6d65b;
+  --secondary: #9a7bff;
+  --primary: #130f2e;
   --border: rgba(255,255,255,0.12);
-  --radius: 14px;
-  --font-heading: "Space Grotesk", "Inter", system-ui, sans-serif;
-  --font-body: "Poppins", "Inter", system-ui, sans-serif;
-  --shadow: 0 24px 70px rgba(0,0,0,0.55);
+  --radius: 16px;
+  --shadow: 0 22px 60px rgba(0,0,0,0.6);
+  --font-display: "Bebas Neue", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
 }
-
 *{box-sizing:border-box}
 body{
   margin:0;
   font-family:var(--font-body);
   background:
-    radial-gradient(circle at 16% 10%, rgba(124,240,160,0.12), transparent 30%),
-    radial-gradient(circle at 82% 8%, rgba(242,140,56,0.18), transparent 32%),
-    linear-gradient(140deg, #071b12, #04150e 55%, #0c2518);
+    radial-gradient(circle at 12% 10%, rgba(154,123,255,0.16), transparent 32%),
+    radial-gradient(circle at 82% 18%, rgba(246,214,91,0.12), transparent 30%),
+    radial-gradient(circle at 50% 90%, rgba(108,205,255,0.14), transparent 30%),
+    linear-gradient(145deg, #0a0819 0%, #0d0a24 40%, #0f0c2c 100%);
   color:var(--text);
   line-height:1.65;
   min-height:100vh;
   -webkit-font-smoothing:antialiased;
 }
-a{color:var(--accent-2); text-decoration:none; transition:color .18s, opacity .18s}
-a:hover{color:var(--accent); opacity:0.9}
-.link-accent{color:var(--accent); font-weight:700}
-.link-accent:hover{color:var(--accent-2)}
+a{color:var(--accent); text-decoration:none; transition:color .18s ease, opacity .18s ease}
+a:hover{color:var(--secondary); opacity:0.92}
 img{max-width:100%; display:block}
 
-.container{width:min(1140px, 100% - 2rem); margin:0 auto}
+.container{width:min(1180px, 100% - 2.4rem); margin:0 auto}
 
-.notice-banner{
-  background:linear-gradient(135deg, var(--accent), var(--accent-2));
-  color:#04140d;
-  padding:0.55rem 0;
-  text-align:center;
-  font-weight:700;
-  border-bottom:1px solid rgba(0,0,0,0.2);
-  box-shadow:0 10px 28px rgba(0,0,0,0.35);
-  position:relative;
-  z-index:70;
-}
-.banner-inner{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:0.65rem;
-  flex-wrap:wrap;
-  font-size:0.97rem;
-}
-.banner-pill{
-  background:rgba(0,0,0,0.12);
-  color:#04140d;
-  padding:0.35rem 0.7rem;
-  border-radius:999px;
-  font-weight:800;
-  letter-spacing:0.5px;
-}
-
-.zlottour-com-nav{
-  background:rgba(5,15,11,0.9);
-  border-bottom:1px solid var(--border);
-  backdrop-filter:blur(14px);
+.topbar{
   position:sticky;
   top:0;
-  z-index:60;
-  padding:0.85rem 0;
+  z-index:80;
+  background:rgba(10,8,25,0.9);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  box-shadow:0 8px 30px rgba(0,0,0,0.35);
 }
-.zlottour-com-nav .navbar-brand{
+.nav-wrap{
   display:flex;
   align-items:center;
-  gap:0.65rem;
-  padding:0;
+  justify-content:space-between;
+  gap:1rem;
+  padding:0.9rem 0;
 }
-.brand-logo{
+.brand{
+  display:flex;
+  align-items:center;
+  gap:0.75rem;
+}
+.brand img{
   width:132px;
-  height:auto;
-  display:block;
   border-radius:12px;
-  box-shadow:0 12px 30px rgba(0,0,0,0.45);
+  box-shadow:0 10px 28px rgba(0,0,0,0.45);
 }
-.zlottour-com-nav .nav-link{
+.brand-name{
+  font-family:var(--font-display);
+  letter-spacing:2px;
+  font-size:1.6rem;
+  color:var(--heading);
+}
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:0.8rem;
+}
+.nav-links a{
   color:var(--text);
   font-weight:600;
-  margin:0 0.35rem;
-  padding:0.35rem 0.65rem;
-  border-radius:10px;
-  transition:background .15s, color .15s;
+  padding:0.45rem 0.75rem;
+  border-radius:12px;
+  transition:background .15s ease, color .15s ease;
 }
-.zlottour-com-nav .nav-link.active,
-.zlottour-com-nav .nav-link:hover{
+.nav-links a:hover{background:var(--panel); color:var(--accent)}
+.nav-links .btn{
+  padding:0.75rem 1rem;
+}
+.menu-toggle{
+  display:none;
   background:var(--panel);
-  color:var(--accent);
-}
-.navbar-toggler{
   border:1px solid var(--border);
   color:var(--text);
+  padding:0.55rem 0.75rem;
+  border-radius:12px;
 }
-.navbar-toggler:focus{box-shadow:0 0 0 3px rgba(124,240,160,0.2)}
 
-.zlottour-com-btn{
+.btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  gap:0.4rem;
+  gap:0.45rem;
   padding:0.78rem 1.6rem;
   border-radius:12px;
   font-weight:700;
   border:1px solid transparent;
   cursor:pointer;
   transition:transform .16s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
-  text-decoration:none;
 }
-.zlottour-com-btn.primary{
-  background:linear-gradient(135deg, var(--accent), var(--accent-2));
-  color:#04130d;
-  box-shadow:0 14px 36px rgba(0,0,0,0.4);
+.btn.primary{
+  background:linear-gradient(135deg, var(--secondary), var(--accent));
+  color:#0b0920;
+  box-shadow:0 12px 36px rgba(0,0,0,0.35);
 }
-.zlottour-com-btn.primary:hover{transform:translateY(-2px)}
-.zlottour-com-btn.ghost{
+.btn.primary:hover{transform:translateY(-2px)}
+.btn.ghost{
   background:var(--panel);
   border-color:var(--border);
   color:var(--text);
 }
-.zlottour-com-btn.ghost:hover{color:var(--accent)}
+.btn.ghost:hover{color:var(--accent)}
 
-.eyebrow{
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-size:0.78rem;
-  color:var(--muted);
-  margin:0 0 0.35rem;
-}
-.section-title{
-  font-family:var(--font-heading);
-  color:var(--heading);
-  font-size:2.1rem;
-  margin:0 0 0.45rem;
-}
-.section-sub{margin:0 0 1rem; color:var(--muted)}
-
-.zlottour-com-hero{
+.hero{
   position:relative;
-  padding:clamp(3rem, 6vw, 4.8rem) 0;
   overflow:hidden;
+  padding:clamp(2.5rem, 6vw, 4.8rem) 0 clamp(3rem, 7vw, 5.6rem);
 }
-.zlottour-com-hero::before,
-.zlottour-com-hero::after{
+.hero::before,
+.hero::after{
   content:"";
   position:absolute;
-  width:420px; height:420px;
+  width:420px;
+  height:420px;
   border-radius:50%;
   filter:blur(120px);
   opacity:0.35;
   z-index:0;
 }
-.zlottour-com-hero::before{top:-120px; left:-60px; background:radial-gradient(circle, rgba(124,240,160,0.48), transparent 60%)}
-.zlottour-com-hero::after{bottom:-140px; right:-20px; background:radial-gradient(circle, rgba(242,140,56,0.42), transparent 60%)}
-.hero-inner{
+.hero::before{top:-120px; left:-60px; background:radial-gradient(circle, rgba(154,123,255,0.45), transparent 60%)}
+.hero::after{bottom:-140px; right:-20px; background:radial-gradient(circle, rgba(246,214,91,0.4), transparent 60%)}
+.hero-grid{
   position:relative;
   z-index:1;
   display:grid;
-  grid-template-columns:1fr;
-  gap:1.6rem;
-  text-align:center;
+  grid-template-columns:1.1fr 0.9fr;
+  gap:2.2rem;
+  align-items:center;
+}
+.hero-copy .eyebrow{
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-size:0.85rem;
+  color:var(--muted);
+  margin:0 0 0.4rem;
 }
 .hero-title{
-  font-family:var(--font-heading);
-  font-size:2.8rem;
-  line-height:1.08;
+  font-family:var(--font-display);
+  font-size:clamp(2.2rem, 5vw, 3.8rem);
+  letter-spacing:1px;
   margin:0 0 0.6rem;
+  color:var(--heading);
 }
 .hero-sub{
+  margin:0 0 1rem;
   color:var(--muted);
-  margin:0 auto;
-  max-width:780px;
+  max-width:720px;
 }
-.hero-cta{display:flex; justify-content:center; gap:0.8rem; flex-wrap:wrap; margin-top:1.1rem}
-.hero-badges{
+.hero-cta{
   display:flex;
-  justify-content:center;
-  gap:0.6rem;
+  gap:0.8rem;
   flex-wrap:wrap;
+  margin:1rem 0 0.8rem;
 }
 .pill{
   display:inline-flex;
   align-items:center;
-  gap:0.35rem;
-  padding:0.4rem 0.8rem;
+  gap:0.4rem;
+  padding:0.42rem 0.9rem;
   border-radius:999px;
   background:var(--panel);
   border:1px solid var(--border);
@@ -215,308 +193,317 @@ img{max-width:100%; display:block}
   font-size:0.95rem;
 }
 .pill.accent{
-  background:rgba(242,140,56,0.16);
+  background:rgba(246,214,91,0.14);
   color:var(--accent);
-  border-color:rgba(242,140,56,0.42);
+  border-color:rgba(246,214,91,0.35);
 }
+.badges{display:flex; flex-wrap:wrap; gap:0.6rem; margin:0.2rem 0 1.1rem}
 
-.zlottour-com-disclaimer-card{padding:3rem 0}
-.disclaimer-box{
-  max-width:900px;
-  margin:0 auto;
-  background:var(--panel);
+.countdown-card{
+  margin-top:1.4rem;
+  background:linear-gradient(135deg, rgba(154,123,255,0.14), rgba(246,214,91,0.08));
   border:1px solid var(--border);
-  padding:1.4rem;
-  border-radius:16px;
-  text-align:center;
+  border-radius:var(--radius);
+  padding:1rem 1.2rem;
   box-shadow:var(--shadow);
 }
-.disclaimer-title{
-  color:var(--heading);
-  margin:0 0 0.35rem;
-  font-family:var(--font-heading);
-}
-.disclaimer-heading{
-  margin:0 0 0.4rem;
-  color:var(--heading);
-  font-family:var(--font-heading);
-}
-.disclaimer-text{color:var(--muted); margin:0 0 1rem}
-.disclaimer-btn{
-  background:var(--accent);
-  color:#04130d;
-  padding:0.6rem 1.25rem;
-  border-radius:999px;
+.countdown-title{
   font-weight:700;
-  display:inline-block;
+  color:var(--heading);
+  margin:0 0 0.6rem;
 }
-.disclaimer-btn:hover{background:var(--accent-2); color:#02150f}
-
-.zlottour-com-play{
-  padding:3.5rem 0;
-  text-align:center;
-}
-.game-wrapper{
-  margin:2rem auto;
+.countdown{
   display:flex;
-  justify-content:center;
+  gap:0.8rem;
+  flex-wrap:wrap;
 }
-.game-wrapper > .w-100{
-  width:100%;
-  max-width:920px;
-  text-align:center;
-}
-.game-frame{
-  position:relative;
-  width:100%;
-  max-width:920px;
-  border-radius:14px;
-  overflow:hidden;
-  background:linear-gradient(160deg, rgba(242,140,56,0.18), rgba(124,240,160,0.12));
+.countdown .slot{
+  flex:1 1 120px;
+  min-width:120px;
+  background:var(--panel);
   border:1px solid var(--border);
-  box-shadow:0 16px 40px rgba(0,0,0,0.45);
+  border-radius:12px;
+  text-align:center;
+  padding:0.8rem 0.6rem;
 }
-.game-frame::before{content:""; display:block; padding-top:56.25%;}
-.game-frame iframe{
+.countdown .value{
+  display:block;
+  font-family:var(--font-display);
+  font-size:2.4rem;
+  color:var(--accent);
+}
+.countdown small{
+  display:block;
+  color:var(--muted);
+  letter-spacing:1px;
+  text-transform:uppercase;
+  font-weight:700;
+}
+
+.hero-visual{
+  position:relative;
+  background:linear-gradient(160deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:1.2rem;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.hero-visual .halo{
   position:absolute;
   inset:0;
-  width:100%;
-  height:100%;
-  border:0;
+  background:radial-gradient(circle at 40% 30%, rgba(246,214,91,0.22), transparent 60%);
+  filter:blur(30px);
+  z-index:0;
 }
-.game-caption{
-  margin-top:0.5rem;
-  color:var(--muted);
-  font-weight:600;
+.hero-visual img{
+  position:relative;
+  z-index:1;
+  border-radius:14px;
+  box-shadow:0 16px 44px rgba(0,0,0,0.55);
 }
-
-.zlottour-com-features{
-  padding:3.5rem 0;
-  background:rgba(255,255,255,0.01);
-}
-.feature-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
-  gap:1rem;
-  margin-top:1.6rem;
-}
-.feature-box{
-  background:var(--panel);
+.hero-label{
+  position:absolute;
+  top:14px;
+  right:14px;
+  z-index:2;
+  background:rgba(10,8,25,0.8);
   border:1px solid var(--border);
-  padding:1.4rem;
-  border-radius:12px;
-  color:var(--text);
-  transition:transform .16s, box-shadow .16s;
-  box-shadow:var(--shadow);
+  padding:0.4rem 0.8rem;
+  border-radius:999px;
+  color:var(--muted);
+  font-weight:700;
 }
-.feature-box:hover{transform:translateY(-4px); box-shadow:0 18px 46px rgba(0,0,0,0.6)}
-.feature-icon{font-size:1.9rem; color:var(--accent); margin-bottom:0.4rem}
-.feature-box h4{margin:0 0 0.35rem; font-family:var(--font-heading)}
-.feature-box p{margin:0; color:var(--muted)}
 
-.zlottour-com-about{padding:3.8rem 0}
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:1.8rem;
-  align-items:center;
+.section-head{
+  text-align:center;
+  margin-bottom:1.6rem;
 }
-.about-visual{
-  background:linear-gradient(145deg, rgba(242,140,56,0.2), rgba(124,240,160,0.14));
+.section-eyebrow{
+  text-transform:uppercase;
+  letter-spacing:2px;
+  color:var(--muted);
+  margin:0;
+  font-size:0.9rem;
+}
+.section-title{
+  font-family:var(--font-display);
+  font-size:clamp(1.9rem, 4vw, 2.6rem);
+  color:var(--heading);
+  margin:0.25rem 0;
+}
+.section-sub{
+  margin:0;
+  color:var(--muted);
+}
+
+.packages{
+  padding:3.2rem 0 2.6rem;
+}
+.package-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+  gap:1rem;
+}
+.package-card{
+  position:relative;
+  background:linear-gradient(155deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
   border:1px solid var(--border);
   border-radius:16px;
-  padding:1.5rem;
-  position:relative;
+  padding:1.2rem;
   box-shadow:var(--shadow);
   overflow:hidden;
+  transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease;
 }
-.about-visual img{border-radius:12px; box-shadow:0 16px 36px rgba(0,0,0,0.55)}
-.about-text p{color:var(--muted); margin:0 0 0.8rem}
-.about-text .zlottour-com-btn{margin-top:0.4rem}
+.package-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(246,214,91,0.4);
+  box-shadow:0 18px 48px rgba(0,0,0,0.55);
+}
+.package-card .ribbon{
+  position:absolute;
+  top:12px;
+  right:12px;
+  background:var(--accent);
+  color:#0b0920;
+  padding:0.32rem 0.7rem;
+  border-radius:999px;
+  font-weight:800;
+  letter-spacing:0.5px;
+}
+.package-name{
+  margin:0 0 0.3rem;
+  font-size:1.15rem;
+  color:var(--heading);
+  font-weight:800;
+}
+.package-value{
+  font-family:var(--font-display);
+  font-size:2.6rem;
+  color:var(--secondary);
+  margin:0;
+}
+.package-note{
+  margin:0 0 0.8rem;
+  color:var(--muted);
+}
+.package-list{
+  list-style:none;
+  padding:0;
+  margin:0 0 1rem;
+  color:var(--text);
+}
+.package-list li{
+  display:flex;
+  align-items:center;
+  gap:0.45rem;
+  margin:0.3rem 0;
+  color:var(--muted);
+}
+.package-list li i{color:var(--accent)}
 
-.zlottour-com-reviews{
-  padding:3.5rem 0;
-  text-align:center;
+.responsible{
+  padding:2.8rem 0;
 }
-.reviews-grid{
-  max-width:940px;
-  margin:0 auto;
+.info-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
   gap:1rem;
 }
-.review-card{
+.info-card{
   background:var(--panel);
   border:1px solid var(--border);
+  border-radius:16px;
   padding:1.2rem;
-  border-radius:12px;
   box-shadow:var(--shadow);
 }
-.review-text{font-style:italic; color:var(--text); margin:0 0 0.6rem}
-.review-author{color:var(--accent); font-weight:700; margin:0}
+.info-card h4{
+  margin:0 0 0.45rem;
+  color:var(--heading);
+}
+.info-card p{
+  margin:0;
+  color:var(--muted);
+}
 
-.zlottour-com-contact{
-  background:rgba(255,255,255,0.01);
-  padding:4rem 0;
+.contact{
+  padding:3rem 0 3.4rem;
 }
 .contact-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:1.6rem;
+  gap:1.2rem;
+  align-items:start;
 }
-.contact-info{
+.contact-card,
+.contact-form-card{
   background:var(--panel);
   border:1px solid var(--border);
-  border-radius:12px;
-  padding:1.1rem;
-  color:var(--text);
-}
-.contact-info p{margin:0.1rem 0; color:var(--muted)}
-.contact-info strong{color:var(--text)}
-.contact-form{
-  background:var(--panel);
-  border:1px solid var(--border);
-  border-radius:12px;
-  padding:1.1rem;
-  display:flex;
-  flex-direction:column;
-  gap:0.9rem;
+  border-radius:16px;
+  padding:1.2rem;
   box-shadow:var(--shadow);
 }
-.contact-form input,
-.contact-form textarea{
+.contact-card h3{margin:0 0 0.4rem; color:var(--heading)}
+.contact-card p{margin:0.2rem 0; color:var(--muted)}
+.contact-card strong{color:var(--heading)}
+.contact-form-card form{
+  display:flex;
+  flex-direction:column;
+  gap:0.75rem;
+}
+.contact-form-card input,
+.contact-form-card textarea{
   width:100%;
-  padding:0.78rem 0.9rem;
-  border-radius:10px;
+  padding:0.85rem 0.95rem;
+  border-radius:12px;
   border:1px solid var(--border);
   background:rgba(255,255,255,0.03);
   color:var(--text);
   font-size:1rem;
-  transition:border .16s, box-shadow .16s;
+  transition:border .16s ease, box-shadow .16s ease;
 }
-.contact-form input:focus,
-.contact-form textarea:focus{
+.contact-form-card input:focus,
+.contact-form-card textarea:focus{
   outline:none;
-  border-color:var(--accent-2);
-  box-shadow:0 0 0 3px rgba(124,240,160,0.2);
+  border-color:rgba(154,123,255,0.5);
+  box-shadow:0 0 0 3px rgba(154,123,255,0.18);
 }
 .form-status{
   min-height:20px;
   color:var(--muted);
 }
 .form-status.success{color:#9ff2c0}
-.form-status.error{color:#f28c38}
+.form-status.error{color:#ff9b73}
 
-.zlottour-com-legal{
-  background:rgba(255,255,255,0.02);
+.footer{
+  background:linear-gradient(180deg, #0a0718, #080615);
   border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-  padding:3.5rem 0;
+  padding:3rem 0 2.2rem;
 }
-.zlottour-com-legal .section-title{text-align:center}
-.zlottour-com-legal .subheading{
-  color:var(--accent);
-  font-size:1.15rem;
-  margin:1.6rem 0 0.4rem;
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+  gap:1.2rem;
+  margin-bottom:1.6rem;
 }
-.zlottour-com-legal p{
+.footer h4{
+  margin:0 0 0.5rem;
+  color:var(--heading);
+}
+.footer p{
+  margin:0;
   color:var(--muted);
-  margin:0 0 1rem;
 }
-
-.zlottour-com-footer{
-  background:rgba(5,15,11,0.94);
-  color:var(--text);
-  text-align:center;
-  padding:3.2rem 1rem 2.4rem;
-  border-top:1px solid var(--border);
-  position:relative;
-  overflow:hidden;
-}
-.zlottour-com-footer::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:radial-gradient(circle at 50% 20%, rgba(242,140,56,0.05), transparent 65%);
-  z-index:0;
-}
-.zlottour-com-footer .container{position:relative; z-index:1}
-.footer-brand{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:0.7rem;
-  margin-bottom:1rem;
-}
-.footer-disclaimer{
-  background:var(--panel);
-  border:1px solid var(--border);
-  color:var(--muted);
-  max-width:780px;
-  margin:0 auto 1.6rem;
-  padding:1.2rem;
-  border-radius:14px;
-  box-shadow:var(--shadow);
-}
-.footer-links{
-  display:flex;
-  justify-content:center;
-  gap:0.85rem;
-  flex-wrap:wrap;
-  padding:0;
-  margin:0 0 1rem;
+.footer ul{
   list-style:none;
+  padding:0;
+  margin:0;
 }
-.footer-links a{
-  color:var(--accent);
-  font-weight:600;
+.footer li{
+  margin:0.35rem 0;
 }
-.footer-links a:hover{color:var(--accent-2)}
 .footer-copy{
+  text-align:center;
   color:var(--muted);
   margin:0;
 }
 
-.zlottour-com-popup{
+.sticky-ribbon{
   position:fixed;
-  inset:0;
+  bottom:12px;
+  left:50%;
+  transform:translateX(-50%);
+  background:rgba(12,10,30,0.9);
+  border:1px solid var(--border);
+  border-radius:999px;
+  padding:0.55rem 1rem;
   display:flex;
   align-items:center;
-  justify-content:center;
-  background:rgba(0,0,0,0.82);
-  z-index:9999;
-  opacity:0;
-  visibility:hidden;
-  transition:opacity .2s, visibility .2s;
-  padding:1rem;
+  gap:0.8rem;
+  box-shadow:0 12px 30px rgba(0,0,0,0.45);
+  backdrop-filter:blur(10px);
+  z-index:60;
+  flex-wrap:wrap;
 }
-.zlottour-com-popup.active{opacity:1; visibility:visible}
-.zlottour-com-popup .popup-inner{
-  background:linear-gradient(160deg, rgba(5,15,11,0.96), rgba(5,15,11,0.98));
-  border:1px solid var(--border);
-  color:var(--text);
-  padding:1.6rem;
-  border-radius:14px;
-  max-width:520px;
-  text-align:center;
-  box-shadow:var(--shadow);
+.sticky-ribbon .item{
+  display:flex;
+  align-items:center;
+  gap:0.35rem;
+  color:var(--muted);
+  font-weight:600;
 }
-.zlottour-com-popup h3{margin:0 0 0.4rem; color:var(--heading)}
-.zlottour-com-popup p{margin:0 0 0.8rem; color:var(--muted)}
-.popup-buttons{display:flex; justify-content:center; gap:0.6rem; flex-wrap:wrap}
-.popup-buttons .exit{background:transparent; border:1px solid var(--border); color:var(--heading)}
-.popup-buttons .exit:hover{background:var(--panel)}
+.sticky-ribbon .item i{color:var(--accent)}
 
-.zlottour-com-scroll{
+.scroll-top{
   position:fixed;
-  right:22px;
-  bottom:22px;
-  width:44px;
-  height:44px;
+  right:18px;
+  bottom:70px;
+  width:46px;
+  height:46px;
   border-radius:50%;
   border:none;
   background:var(--accent);
-  color:#04130d;
+  color:#0b0920;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -525,10 +512,74 @@ img{max-width:100%; display:block}
   opacity:0;
   visibility:hidden;
   transition:all .16s;
-  z-index:90;
+  z-index:65;
 }
-.zlottour-com-scroll.show{opacity:1; visibility:visible}
-.zlottour-com-scroll:hover{background:var(--accent-2)}
+.scroll-top.show{opacity:1; visibility:visible}
+.scroll-top:hover{background:var(--secondary); color:#fff}
+
+.zlottour-modal{
+  position:fixed;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,0,0,0.78);
+  backdrop-filter:blur(8px);
+  z-index:120;
+  padding:1rem;
+}
+.zlottour-modal.active{display:flex}
+.modal-card{
+  background:linear-gradient(155deg, #110d24, #0c0a1c);
+  border:1px solid var(--border);
+  border-radius:18px;
+  width:min(520px, 100%);
+  padding:1.4rem;
+  color:var(--text);
+  position:relative;
+  box-shadow:var(--shadow);
+}
+.modal-card h3{
+  margin:0 0 0.3rem;
+  font-family:var(--font-display);
+  font-size:2rem;
+}
+.modal-card p{margin:0 0 0.8rem; color:var(--muted)}
+.modal-close{
+  position:absolute;
+  top:12px;
+  right:12px;
+  background:var(--panel);
+  border:1px solid var(--border);
+  color:var(--muted);
+  border-radius:10px;
+  padding:0.4rem 0.6rem;
+  cursor:pointer;
+}
+.modal-form{
+  display:flex;
+  flex-direction:column;
+  gap:0.7rem;
+}
+.modal-form input{
+  padding:0.85rem 0.95rem;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,0.03);
+  color:var(--text);
+}
+.modal-form input:focus{
+  outline:none;
+  border-color:rgba(246,214,91,0.4);
+  box-shadow:0 0 0 3px rgba(246,214,91,0.15);
+}
+.modal-status{
+  min-height:22px;
+  color:var(--muted);
+  font-weight:600;
+}
+.modal-status.success{color:#9ff2c0}
+.modal-status.error{color:#ff9b73}
 
 .sr-only{
   position:absolute;
@@ -541,239 +592,295 @@ img{max-width:100%; display:block}
   border:0;
 }
 
-@media (max-width: 992px){
-  .about-grid,
-  .contact-grid{
-    grid-template-columns:1fr;
+@media (max-width: 960px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-visual{order:-1}
+  .nav-links{
+    position:absolute;
+    left:0;
+    right:0;
+    top:100%;
+    background:rgba(10,8,25,0.96);
+    padding:0.8rem 1.2rem 1rem;
+    flex-direction:column;
+    align-items:flex-start;
+    border-bottom:1px solid var(--border);
+    display:none;
   }
-  .hero-title{font-size:2.4rem}
+  .nav-links.open{display:flex}
+  .menu-toggle{display:inline-flex}
 }
-@media (max-width: 768px){
-  .hero-title{font-size:2.05rem}
-  .game-frame{max-width:100%}
-  .zlottour-com-nav{padding:0.75rem 0}
+@media (max-width: 720px){
+  .countdown .slot{min-width:48%}
+  .contact-grid{grid-template-columns:1fr}
+  .sticky-ribbon{bottom:8px; border-radius:16px}
+  .brand img{width:112px}
 }
-@media (max-width: 576px){
-  .hero-cta{flex-direction:column}
-  .brand-logo{width:114px}
-}
-
-</style>
+  </style>
 </head>
-<body class="zlottour-com zlottour-com-z3e9">
-
-<div class="notice-banner notice-banner-p4o3">
-  <div class="container container-g1j0 banner-inner banner-inner-u7q0">
-    <span class="banner-pill banner-pill-d9v2">18+</span>
-    <span>Megarush Bean is a free-to-play social casino style playground on zlottour.com. No real-money gambling or prizes. 18+ only. Please play responsibly.</span>
-  </div>
-</div>
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-o8m1 navbar-expand-lg navbar-expand-lg-m6y6 zlottour-com-nav zlottour-com-nav-e3l3">
-  <div class="container container-g1j0 d-flex d-flex-q5f2 align-items-center align-items-center-v5i0 justify-content-between justify-content-between-v2r9">
-    <a class="navbar-brand navbar-brand-d6z2" href="/">
-      <img class="brand-logo brand-logo-c2e3" src="assets/img.png" alt="Megarush Bean logo">
-      <span class="sr-only sr-only-b4d1">zlottour.com</span>
-    </a>
-    <button class="navbar-toggler navbar-toggler-f6h3" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon navbar-toggler-icon-x7i3"><i class="fas fas-c9r9 fa-bars fa-bars-y5b5"></i></span>
-    </button>
-
-    <div class="collapse collapse-x7l4 navbar-collapse navbar-collapse-v4r1 justify-content-end justify-content-end-h6f4" id="navMenu">
-      <ul class="navbar-nav navbar-nav-z1y4 mb-2 mb-2-n8v5 mb-lg-0 mb-lg-0-j9a1 align-items-lg-center align-items-lg-center-g5m2">
-        <li class="nav-item nav-item-x5e8"><a class="nav-link nav-link-m0o7 active active-t4d0" href="#home">Home</a></li>
-        <li class="nav-item nav-item-x5e8"><a class="nav-link nav-link-m0o7" href="/play">Play</a></li>
-        <li class="nav-item nav-item-x5e8"><a class="nav-link nav-link-m0o7" href="#contact">Contact</a></li>
-        <li class="nav-item nav-item-x5e8"><a class="nav-link nav-link-m0o7" href="/disclaimer">Disclaimer</a></li>
-        <li class="nav-item nav-item-x5e8"><a class="nav-link nav-link-m0o7" href="/privacy-policy">Privacy</a></li>
-        <li class="nav-item nav-item-x5e8"><a class="nav-link nav-link-m0o7" href="/terms-and-conditions">Terms</a></li>
-        <li class="nav-item nav-item-x5e8 ms-lg-2 ms-lg-2-k9n5">
-          <a class="zlottour-com-btn zlottour-com-btn-g5k6 outline outline-x3a2" href="/play">Start a session</a>
-        </li>
-      </ul>
+<body class="zlottour">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="/">
+        <img src="assets/img.png" alt="Zlottour logo">
+        <span class="brand-name">Zlottour</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Toggle menu" data-menu-toggle>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="nav-links" id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#responsible">Responsible play</a>
+        <a href="#contact">Contact</a>
+        <a href="/privacy-policy">Privacy</a>
+        <a href="/terms-and-conditions">Terms</a>
+        <a href="#" class="btn ghost" data-login-btn><i class="fa-solid fa-user"></i> Log in</a>
+        <a href="#" class="btn primary" data-signup-btn><i class="fa-solid fa-bolt"></i> Start now</a>
+      </nav>
     </div>
-  </div>
-</nav>
+  </header>
 
-<!-- HERO -->
-<section id="home" class="zlottour-com-hero zlottour-com-hero-c8o7">
-  <div class="container container-g1j0 hero-inner hero-inner-y5d4 text-center text-center-v3f6">
-    <p class="eyebrow eyebrow-n6j7">Entertainment only — no cash, no prizes</p>
-    <h1 class="hero-title hero-title-i8o2">Spin into Megarush Bean for fast, free-to-play browser thrills—no bankroll needed.</h1>
-    <p class="hero-sub hero-sub-f5g2">
-      Quick-load, mobile-friendly experiences with zero deposits or prizes. Launch campaigns or demos under the
-      zlottour.com banner, keep it flashy-not-trashy, and stay crystal clear it's pure entertainment for adults 18+.
-    </p>
-    <div class="hero-cta hero-cta-w8a3">
-      <a href="/play" class="zlottour-com-btn zlottour-com-btn-g5k6 primary primary-e8e2">Play now</a>
-      <a href="#disclaimer-block" class="zlottour-com-btn zlottour-com-btn-g5k6 outline outline-x3a2">See safety note</a>
-    </div>
-    <div class="hero-badges hero-badges-t9v9">
-      <span class="pill pill-n7n0 accent accent-r8f9"><i class="fa-solid fa-solid-i1m6 fa-bolt fa-bolt-s5i5"></i>Instant load</span>
-      <span class="pill pill-n7n0"><i class="fa-solid fa-solid-i1m6 fa-shield fa-shield-h6v6"></i>18+ entertainment</span>
-      <span class="pill pill-n7n0"><i class="fa-solid fa-solid-i1m6 fa-mobile-screen fa-mobile-screen-q0m5"></i>Mobile first</span>
-    </div>
-  </div>
-</section>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Weekly feature drops</p>
+          <h1 class="hero-title">Compete & cruise through fresh Zlottour drops built in the WINS style.</h1>
+          <p class="hero-sub">
+            Glow-heavy visuals, bold typography, and ready-to-run campaigns—rebranded for Zlottour with the same electric energy.
+            Free-to-play social casino style previews, 18+ only, no cash prizes.
+          </p>
+          <div class="hero-cta">
+            <a href="#" class="btn primary" data-signup-btn>Join now &amp; start a session</a>
+            <a href="#packages" class="btn ghost">See the packages</a>
+          </div>
+          <div class="badges">
+            <span class="pill accent"><i class="fa-solid fa-burst"></i> WINS-inspired glow</span>
+            <span class="pill"><i class="fa-solid fa-shield"></i> 18+ entertainment</span>
+            <span class="pill"><i class="fa-solid fa-mobile-screen-button"></i> Mobile-first</span>
+          </div>
 
-<!-- DISCLAIMER CARD -->
-<section id="disclaimer-block" class="zlottour-com-disclaimer-card zlottour-com-disclaimer-card-x3w7 text-center text-center-v3f6" aria-labelledby="disclaimer-title">
-  <div class="container container-g1j0">
-    <div class="disclaimer-box disclaimer-box-b8y8 mx-auto mx-auto-z9k5 p-4 p-4-i7c6">
-      <h2 id="disclaimer-title" class="disclaimer-title disclaimer-title-j4f1">
-        <i class="fas fas-c9r9 fa-circle-exclamation fa-circle-exclamation-l6e8"></i> Important notice
-      </h2>
-      <p class="disclaimer-text disclaimer-text-x5r2">
-        <strong>zlottour.com</strong> hosts free-to-play social casino style browser experiences.
-        There are <strong>no monetary features, deposits, or prizes</strong> on this site.
-        Access is intended for users aged <strong>18+</strong>. Enjoy the glow responsibly and take breaks.
+          <div class="countdown-card">
+            <p class="countdown-title">Next Zlottour feature drop begins in</p>
+            <div class="countdown" id="countdown">
+              <div class="slot">
+                <span class="value" id="countdownDays">00</span>
+                <small>Days</small>
+              </div>
+              <div class="slot">
+                <span class="value" id="countdownHours">00</span>
+                <small>Hours</small>
+              </div>
+              <div class="slot">
+                <span class="value" id="countdownMinutes">00</span>
+                <small>Minutes</small>
+              </div>
+              <div class="slot">
+                <span class="value" id="countdownSeconds">00</span>
+                <small>Seconds</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="halo"></div>
+          <img src="assets/herobackground01.webp" alt="Zlottour hero collage">
+          <span class="hero-label"><i class="fa-solid fa-circle-info"></i> Entertainment only</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow">Pick your pace</p>
+          <h2 class="section-title">Packages that mirror WINS, re-badged for Zlottour</h2>
+          <p class="section-sub">Choose a bundle that fits your campaign preview. All experiences are free-to-play, no cash prizes.</p>
+        </div>
+
+        <div class="package-grid">
+          <article class="package-card">
+            <h3 class="package-name">Starter Spark</h3>
+            <p class="package-value">50 spins</p>
+            <p class="package-note">Quick teaser, best for lightweight campaigns.</p>
+            <ul class="package-list">
+              <li><i class="fa-solid fa-check"></i> No deposits or prizes</li>
+              <li><i class="fa-solid fa-check"></i> Mobile + desktop preview</li>
+              <li><i class="fa-solid fa-check"></i> Basic age gate (18+)</li>
+            </ul>
+            <a href="#" class="btn primary" data-signup-btn>Get started</a>
+          </article>
+
+          <article class="package-card">
+            <h3 class="package-name">Pro Player</h3>
+            <p class="package-value">75 spins</p>
+            <p class="package-note">More volume for A/B creative flights.</p>
+            <ul class="package-list">
+              <li><i class="fa-solid fa-check"></i> Fast-load IFRAME embed</li>
+              <li><i class="fa-solid fa-check"></i> Custom CTA buttons</li>
+              <li><i class="fa-solid fa-check"></i> Safety copy baked in</li>
+            </ul>
+            <a href="#" class="btn primary" data-signup-btn>Claim slot</a>
+          </article>
+
+          <article class="package-card">
+            <span class="ribbon">Most popular</span>
+            <h3 class="package-name">VIP Master</h3>
+            <p class="package-value">150 spins</p>
+            <p class="package-note">Full glow treatment plus tighter messaging.</p>
+            <ul class="package-list">
+              <li><i class="fa-solid fa-check"></i> Custom headline + accent colors</li>
+              <li><i class="fa-solid fa-check"></i> Sticky compliance ribbon</li>
+              <li><i class="fa-solid fa-check"></i> Dedicated support queue</li>
+            </ul>
+            <a href="#" class="btn primary" data-signup-btn>Book a drop</a>
+          </article>
+
+          <article class="package-card">
+            <h3 class="package-name">Elite Bundle</h3>
+            <p class="package-value">100 spins</p>
+            <p class="package-note">Polished mid-tier option for weekly rotations.</p>
+            <ul class="package-list">
+              <li><i class="fa-solid fa-check"></i> Hero rewrite for your angle</li>
+              <li><i class="fa-solid fa-check"></i> Timer to drive urgency</li>
+              <li><i class="fa-solid fa-check"></i> Responsible-play spotlight</li>
+            </ul>
+            <a href="#" class="btn primary" data-signup-btn>Lock it in</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="responsible" id="responsible">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow">Play it safe</p>
+          <h2 class="section-title">Responsible play built in from the start</h2>
+          <p class="section-sub">Every Zlottour drop keeps the WINS-style guardrails but rebranded for our network.</p>
+        </div>
+        <div class="info-grid">
+          <div class="info-card">
+            <h4><i class="fa-solid fa-ban me-2"></i> No real-money flows</h4>
+            <p>Experiences are free-to-play social casino style previews. No deposits, wagers, or cash-out options.</p>
+          </div>
+          <div class="info-card">
+            <h4><i class="fa-solid fa-shield-halved me-2"></i> 18+ gating</h4>
+            <p>Age badge, safety copy, and sticky ribbon keep expectations clear for all visitors.</p>
+          </div>
+          <div class="info-card">
+            <h4><i class="fa-solid fa-bolt me-2"></i> Fast-loading embeds</h4>
+            <p>Lean builds, mobile-first iframes, and compressed assets mirror the performance of wins-eocf.com.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow">Talk with us</p>
+          <h2 class="section-title">Need a custom Zlottour drop?</h2>
+          <p class="section-sub">Reach out for campaign tweaks, embeds, or compliance copy edits.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Direct line</h3>
+            <p><strong>Email:</strong> <a href="mailto:hello@zlottour.com">hello@zlottour.com</a></p>
+            <p><strong>Business:</strong> Zlottour Studio</p>
+            <p><strong>Hours:</strong> Mon–Fri, 9:00 AM – 5:00 PM (PST)</p>
+            <p><strong>Response:</strong> Usually within 24–48 hours</p>
+            <p><strong>Location:</strong> Remote-first team</p>
+          </div>
+
+          <div class="contact-form-card">
+            <form id="hubForm" novalidate>
+              <input type="text" id="hubName" placeholder="Your name" required minlength="2" maxlength="60">
+              <input type="email" id="hubEmail" placeholder="you@example.com" required>
+              <textarea id="hubMessage" rows="5" placeholder="What can we launch for you?" required></textarea>
+              <button type="submit" class="btn primary">Send message</button>
+              <p id="hubStatus" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">
+            <img src="assets/img.png" alt="Zlottour logo">
+            <span class="brand-name">Zlottour</span>
+          </div>
+          <p>Weekly WINS-inspired drops rebuilt for Zlottour. Entertainment-only previews with clear, responsible messaging.</p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+            <li><a href="/disclaimer">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/play">Play previews</a></li>
+            <li><a href="/privacy-policy">Cookie notice</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-copy">
+        © <span data-year></span> zlottour.com — Free-to-play social casino style previews. 18+ only, no monetary prizes.
       </p>
-      <a href="/disclaimer" class="disclaimer-btn disclaimer-btn-j8p4">Read full disclaimer</a>
     </div>
+  </footer>
+
+  <div class="sticky-ribbon">
+    <div class="item"><i class="fa-solid fa-circle-exclamation"></i> 18+ entertainment</div>
+    <div class="item"><i class="fa-solid fa-shield-check"></i> Responsible play</div>
+    <div class="item"><i class="fa-solid fa-ban"></i> No deposits</div>
+    <div class="item"><i class="fa-solid fa-bolt-lightning"></i> Fast loads</div>
   </div>
-</section>
 
-<!-- FEATURES -->
-<section id="features" class="zlottour-com-features zlottour-com-features-m0c2">
-  <div class="container container-g1j0 text-center text-center-v3f6">
-    <h2 class="section-title section-title-p9a8 mb-1 mb-1-e5k0">Built for bold, playful drops</h2>
-    <p class="section-sub section-sub-q2n7">Bright, casino-inspired energy tuned for zlottour.com without over-promising a thing.</p>
-    <div class="feature-grid feature-grid-q9w8">
-      <div class="feature-box feature-box-f0h1">
-        <i class="fa-solid fa-solid-i1m6 fa-wand-magic-sparkles fa-wand-magic-sparkles-d0u8 feature-icon feature-icon-b0g2"></i>
-        <h4>Intentional visuals</h4>
-        <p>Neon glows, bold hierarchy, and tight copy to hype your creatives without clutter.</p>
-      </div>
-      <div class="feature-box feature-box-f0h1">
-        <i class="fa-solid fa-solid-i1m6 fa-gauge-high fa-gauge-high-t7l5 feature-icon feature-icon-b0g2"></i>
-        <h4>Instant launch</h4>
-        <p>Lightweight builds snap open on desktop or mobile—perfect for quick peeks and campaigns.</p>
-      </div>
-      <div class="feature-box feature-box-f0h1">
-        <i class="fa-solid fa-solid-i1m6 fa-shield-halved fa-shield-halved-y4r3 feature-icon feature-icon-b0g2"></i>
-        <h4>Responsible by design</h4>
-        <p>18+ gating, loud disclaimers, and zero payment flows keep expectations crystal clear.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  <button id="hubScrollTop" class="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
 
-<!-- ABOUT -->
-<section id="about" class="zlottour-com-about zlottour-com-about-e2w5">
-  <div class="container container-g1j0">
-      <div class="about-grid about-grid-n9s2">
-        <div class="about-visual about-visual-a0f9">
-        <img src="assets/herobackground01.webp" alt="Megarush Bean hero collage">
-      </div>
-      <div class="about-text about-text-l5t2">
-        <h2 class="section-title section-title-p9a8">Tour the Megarush Bean refresh</h2>
-        <p>
-          We kept the minimal, low-friction spirit and tuned it for <strong>zlottour.com</strong>.
-          Think quick loads, playful motion, and a copper-and-mint palette that shouts Megarush Bean without hinting at winnings.
-        </p>
-        <p>
-          Each page is ready for campaigns, social casino style demos, and snackable previews with the Megarush Bean badge front and center.
-          No downloads, no wallets—just an energetic lane to show off the fun parts.
-        </p>
-        <a href="#contact" class="zlottour-com-btn zlottour-com-btn-g5k6 primary primary-e8e2">Collaborate with us</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section id="reviews" class="zlottour-com-reviews zlottour-com-reviews-g1w8">
-  <div class="container container-g1j0">
-    <h2 class="section-title section-title-p9a8 mb-1 mb-1-e5k0 text-center text-center-v3f6">What visitors say</h2>
-    <p class="section-sub section-sub-q2n7 text-center text-center-v3f6">Quick takes from early visitors.</p>
-    <div class="reviews-grid reviews-grid-j1j6">
-      <div class="review-card review-card-f9q7">
-        <p class="review-text review-text-d7o9">“Feels like a neon coffee break — quick pop, clean layout, then I'm back to work.”</p>
-        <h5 class="review-author review-author-g0v2">— Jamie P.</h5>
-      </div>
-      <div class="review-card review-card-f9q7">
-        <p class="review-text review-text-d7o9">“Loads in a snap on my phone. Bright, tidy, and easy to dip in and out.”</p>
-        <h5 class="review-author review-author-g0v2">— Nora V.</h5>
-      </div>
-      <div class="review-card review-card-f9q7">
-        <p class="review-text review-text-d7o9">“Mobile-first and fuss-free. The glow hits, the copy’s clear, and I'm never guessing.”</p>
-        <h5 class="review-author review-author-g0v2">— Malik T.</h5>
-      </div>
-      <div class="review-card review-card-f9q7">
-        <p class="review-text review-text-d7o9">“Clean, punchy, and keeps the focus on the fun. Great for a quick reset between tasks.”</p>
-        <h5 class="review-author review-author-g0v2">— Casey L.</h5>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="zlottour-com-contact zlottour-com-contact-y3q1">
-  <div class="container container-g1j0">
-    <h2 class="section-title section-title-p9a8 text-center text-center-v3f6 mb-1 mb-1-e5k0">Contact</h2>
-    <p class="section-sub section-sub-q2n7 text-center text-center-v3f6">Tell us what to launch next, book campaign slots, or request a custom embed.</p>
-
-    <div class="contact-grid contact-grid-x1h0">
-      <div class="contact-info contact-info-v7t1">
-        <h4>Get in touch</h4>
-        <p><strong>Email:</strong> <a href="mailto:hello@zlottour.com" class="link-accent link-accent-t0s6">hello@zlottour.com</a></p>
-        <p><strong>Business:</strong> Megarush Bean Studio</p>
-        <p><strong>Location:</strong> Remote-first studio</p>
-        <p><strong>Hours:</strong> Monday–Friday, 9:00 AM – 5:00 PM (PST)</p>
-        <p><strong>Support:</strong> Replies within 24–48 hours.</p>
-      </div>
-
-      <form id="hubForm" class="contact-form contact-form-y8n9" novalidate>
-        <input type="text" id="hubName" placeholder="Your name" required minlength="2" maxlength="60">
-        <input type="email" id="hubEmail" placeholder="you@example.com" required>
-        <textarea id="hubMessage" rows="5" placeholder="Your message" required></textarea>
-        <button type="submit" class="zlottour-com-btn zlottour-com-btn-g5k6 primary primary-e8e2">Send message</button>
-        <p id="hubStatus" class="form-status form-status-s0n6" aria-live="polite"></p>
+  <div class="zlottour-modal" id="signupModal">
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-modal-close aria-label="Close signup"><i class="fa-solid fa-xmark"></i></button>
+      <h3>Sign up</h3>
+      <p>Join Zlottour to launch your next social casino style drop.</p>
+      <form id="signupForm" class="modal-form">
+        <input type="text" id="signupName" placeholder="Full name" required>
+        <input type="email" id="signupEmail" placeholder="you@example.com" required>
+        <input type="password" id="signupPassword" placeholder="Password (8+ characters)" minlength="8" required>
+        <button type="submit" class="btn primary">Create account</button>
+        <p id="signupStatus" class="modal-status" aria-live="polite"></p>
       </form>
     </div>
   </div>
-</section>
 
-<!-- FOOTER -->
-<footer class="zlottour-com-footer zlottour-com-footer-y5k0">
-  <div class="container container-g1j0">
-    <div class="footer-brand footer-brand-p9z8">
-      <img class="brand-logo brand-logo-c2e3" src="assets/img.png" alt="Megarush Bean logo">
-      <span class="sr-only sr-only-b4d1">zlottour.com</span>
+  <div class="zlottour-modal" id="loginModal">
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-modal-close aria-label="Close login"><i class="fa-solid fa-xmark"></i></button>
+      <h3>Log in</h3>
+      <p>Access your saved Zlottour drops.</p>
+      <form id="loginForm" class="modal-form">
+        <input type="email" id="loginEmail" placeholder="you@example.com" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit" class="btn primary">Log in</button>
+        <p id="loginStatus" class="modal-status" aria-live="polite"></p>
+      </form>
     </div>
-
-    <div class="footer-disclaimer footer-disclaimer-r3t2">
-      <h5 class="disclaimer-heading disclaimer-heading-w8s6"><i class="fas fas-c9r9 fa-snowflake fa-snowflake-c4q3 me-2 me-2-e8c6"></i> Responsible play notice</h5>
-      <p>
-        <strong>zlottour.com</strong> provides free-to-play, social casino style digital experiences for adults aged
-        <strong>18+</strong>. There are no monetary incentives or rewards. Please engage responsibly and take regular breaks
-        for a healthy balance.
-      </p>
-    </div>
-
-    <ul class="footer-links footer-links-o0s5">
-      <li><a href="/">Home</a></li>
-      <li><a href="/play">Play</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="/disclaimer">Disclaimer</a></li>
-      <li><a href="/privacy-policy">Privacy Policy</a></li>
-      <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
-    </ul>
-
-    <p class="footer-copy footer-copy-c7h0">
-      © <span data-year></span> zlottour.com
-    </p>
   </div>
-</footer>
 
-<!-- SCROLL TO TOP -->
-<button id="hubScrollTop" class="zlottour-com-scroll zlottour-com-scroll-h7p4" aria-label="Scroll to top">
-  <i class="fas fas-c9r9 fa-chevron-up fa-chevron-up-q5p4"></i>
-</button>
-
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/main.js" defer></script>
+  <script src="assets/main.js" defer></script>
 </body>
 </html>
