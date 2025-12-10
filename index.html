@@ -295,6 +295,15 @@ img{max-width:100%; display:block}
 .res-links{display:flex; flex-wrap:wrap; gap:0.6rem; margin:0; padding:0; list-style:none}
 .res-links a{color:var(--accent); font-weight:600}
 .res-links a:hover{color:var(--secondary)}
+.rg-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:1rem; margin-top:1.2rem}
+.rg-card{position:relative; background:linear-gradient(150deg, rgba(154,123,255,0.12), rgba(246,214,91,0.08)); border:1px solid var(--border); border-radius:18px; padding:1.2rem; box-shadow:var(--shadow); overflow:hidden}
+.rg-card::after{content:""; position:absolute; inset:0; background:radial-gradient(circle at 80% 20%, rgba(246,214,91,0.16), transparent 55%); opacity:0.7; pointer-events:none}
+.rg-icon{width:44px; height:44px; display:inline-flex; align-items:center; justify-content:center; border-radius:12px; background:rgba(246,214,91,0.16); color:var(--accent); border:1px solid rgba(246,214,91,0.35); margin-bottom:0.6rem; box-shadow:0 10px 28px rgba(0,0,0,0.35)}
+.rg-card h3{margin:0 0 0.35rem; color:var(--heading)}
+.rg-card p{margin:0 0 0.6rem; color:var(--muted); font-weight:600}
+.rg-badge-pill{display:inline-flex; align-items:center; gap:0.35rem; background:rgba(255,255,255,0.05); border:1px solid var(--border); padding:0.35rem 0.75rem; border-radius:999px; font-weight:700; color:var(--muted); margin:0.25rem 0}
+.rg-cta{display:inline-flex; align-items:center; gap:0.4rem; padding:0.85rem 1.4rem; border-radius:12px; background:linear-gradient(120deg, var(--accent), var(--secondary)); color:#0b0920; font-weight:800; box-shadow:0 14px 36px rgba(0,0,0,0.5); border:1px solid rgba(246,214,91,0.5)}
+.rg-cta:hover{transform:translateY(-2px); color:#0b0920}
 
 .contact{padding:3rem 0 3.4rem}
 .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; align-items:start}
@@ -535,22 +544,32 @@ img{max-width:100%; display:block}
         <div class="section-head">
           <p class="section-eyebrow">Compliance</p>
           <h2 class="section-title">Licensed & regulated</h2>
-          <p class="section-sub">Mirrors the ACA raffle structure: limited tickets, published draw date, and responsible gaming.</p>
+          <p class="section-sub">Licensed raffle with clear limits, posted draw date, and a focus on player wellbeing.</p>
         </div>
-        <div class="reg-card">
-          <h3>Licence & limits</h3>
-          <p>Official raffle licence #465790. Only 995 tickets available at $10 each. Draw date: December 26, 2025.</p>
-          <p>One winner receives the $3,780 prize package. Odds depend on total tickets sold (max 1 in 995).</p>
-        </div>
-        <div class="reg-card">
-          <h3>Play Safe, Play Smart</h3>
-          <p>Must be 18+. Play responsibly and within your means. If you or someone you know needs help:</p>
-          <ul class="res-links">
-            <li><a href="https://aglc.ca/gaming/responsible-gambling" target="_blank" rel="noopener noreferrer">AGLC Responsible Gambling</a></li>
-            <li><a href="https://gamesenseab.ca/" target="_blank" rel="noopener noreferrer">GameSense Alberta</a></li>
-            <li><a href="https://www.gambleaware.org/" target="_blank" rel="noopener noreferrer">BeGambleAware</a></li>
-            <li><a href="https://selfexclusion.ca/" target="_blank" rel="noopener noreferrer">Self-Exclusion Program</a></li>
-          </ul>
+
+        <div class="rg-grid">
+          <div class="rg-card">
+            <div class="rg-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Licence & limits</h3>
+            <p>Licence #465790 • 995 tickets • $10 each • Draw: Dec 26, 2025 • One $3,780 winner.</p>
+            <span class="rg-badge-pill"><i class="fa-solid fa-scale-balanced"></i> Posted odds: max 1 in 995</span>
+          </div>
+          <div class="rg-card">
+            <div class="rg-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h3>Play safe, every time</h3>
+            <p>18+ only. Set limits, keep raffle play fun, and take breaks. We promote balance over impulse.</p>
+            <a class="rg-cta" href="https://aglc.ca/gaming/responsible-gambling" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Responsible gaming tips</a>
+          </div>
+          <div class="rg-card">
+            <div class="rg-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+            <h3>Need support?</h3>
+            <p>Helpline: <a href="tel:18663322322" class="link-accent">1-866-332-2322</a> • Alberta Health Services Addiction Helpline.</p>
+            <ul class="res-links">
+              <li><a href="https://gamesenseab.ca/" target="_blank" rel="noopener noreferrer">GameSense Alberta</a></li>
+              <li><a href="https://www.gambleaware.org/" target="_blank" rel="noopener noreferrer">BeGambleAware</a></li>
+              <li><a href="https://selfexclusion.ca/" target="_blank" rel="noopener noreferrer">Self-Exclusion Program</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -565,7 +584,7 @@ img{max-width:100%; display:block}
         <div class="contact-grid">
           <div class="contact-card">
             <h3>Message us</h3>
-            <p>Email: <a href="mailto:hello@zlottour.com">hello@zlottour.com</a></p>
+            <p>Email: <a href="mailto:support@zlottour.com">support@zlottour.com</a></p>
             <p>Hours: Mon–Fri, 9:00 AM – 5:00 PM (MT)</p>
             <p>Response time: within 1–2 business days</p>
           </div>
