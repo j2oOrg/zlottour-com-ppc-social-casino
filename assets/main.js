@@ -68,20 +68,12 @@ function initCountdown() {
   const secondsEl = document.getElementById("countdownSeconds");
   if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
 
-  const baseDurationMs =
-    ((27 * 24) * 60 * 60 * 1000) + // days
-    0 * 60 * 60 * 1000 + // hours
-    0 * 60 * 1000 + // minutes
-    0 * 1000; // seconds
-  let target = Date.now() + baseDurationMs;
+  const targetDate = new Date("December 26, 2025 12:00:00").getTime();
 
   const update = () => {
     const now = Date.now();
-    let diff = target - now;
-    if (diff <= 0) {
-      target = Date.now() + baseDurationMs;
-      diff = target - Date.now();
-    }
+    let diff = targetDate - now;
+    if (diff <= 0) diff = 0;
 
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
