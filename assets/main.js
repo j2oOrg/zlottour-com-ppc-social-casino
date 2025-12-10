@@ -102,7 +102,6 @@ function initNavToggle() {
 
 function initModals() {
   const signupModal = document.getElementById("signupModal");
-  const loginModal = document.getElementById("loginModal");
   const body = document.body;
 
   const openModal = (modal) => {
@@ -114,11 +113,7 @@ function initModals() {
   const closeModal = (modal) => {
     if (!modal) return;
     modal.classList.remove("active");
-    if (
-      ![signupModal, loginModal].some(
-        (item) => item && item.classList.contains("active")
-      )
-    ) {
+    if (![signupModal].some((item) => item && item.classList.contains("active"))) {
       body.style.overflow = "";
     }
   };
@@ -130,43 +125,31 @@ function initModals() {
     })
   );
 
-  document.querySelectorAll("[data-login-btn]").forEach((btn) =>
+  document.querySelectorAll("[data-modal-close]").forEach((btn) =>
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      openModal(loginModal);
+      closeModal(btn.closest(".zlottour-modal"));
     })
   );
 
-  document.querySelectorAll("[data-modal-close]").forEach((btn) =>
-    btn.addEventListener("click", () =>
-      closeModal(btn.closest(".zlottour-modal"))
-    )
-  );
-
-  [signupModal, loginModal].forEach((modal) =>
+  [signupModal].forEach((modal) => {
     modal?.addEventListener("click", (e) => {
       if (e.target === modal) closeModal(modal);
-    })
-  );
+    });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeModal(signupModal);
+  });
 
   const signupForm = document.getElementById("signupForm");
   const signupStatus = document.getElementById("signupStatus");
   if (signupForm && signupStatus) {
     signupForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      signupStatus.textContent = "Thanks for signing up. We'll confirm shortly.";
+      signupStatus.textContent = "Message sent. We'll reach out about your ticket inquiry soon.";
       signupStatus.className = "modal-status success";
       signupForm.reset();
-    });
-  }
-
-  const loginForm = document.getElementById("loginForm");
-  const loginStatus = document.getElementById("loginStatus");
-  if (loginForm && loginStatus) {
-    loginForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      loginStatus.textContent = "Login is disabled in this preview.";
-      loginStatus.className = "modal-status error";
     });
   }
 }
