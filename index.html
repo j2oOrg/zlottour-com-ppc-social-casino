@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -14,8 +14,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="/assets/herobackground02.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Bebas+Neue&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
 :root{
@@ -369,14 +369,14 @@ img{max-width:100%; display:block}
 }
   </style>
 </head>
-<body class="Zlottour">
+<body>
   <header class="topbar">
     <div class="container nav-wrap">
-      <a class="brand" href="/">
+      <a class="brand" href="/" style="position: relative;">
         <img src="assets/img.png" alt="Zlottour logo">
         <span class="brand-name">Zlottour Raffle</span>
       </a>
-      <button class="menu-toggle" type="button" aria-label="Toggle menu" data-menu-toggle>
+      <button class="menu-toggle" type="button" aria-label="Toggle menu" data-menu-toggle="">
         <i class="fa-solid fa-bars"></i>
       </button>
       <nav class="nav-links" id="navMenu">
@@ -396,7 +396,7 @@ img{max-width:100%; display:block}
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Compete &amp; win big every week</p>
+          <p class="eyebrow" style="">&nbsp;testchange</p>
           <h1 class="hero-title">Up to $154,000 cash prizes weekly</h1>
           <div class="hero-prize-stack">
             <span class="hero-prize">$3,780 Current Licensed Draw</span>
@@ -413,7 +413,7 @@ img{max-width:100%; display:block}
             </div>
           </div>
           <div class="hero-cta">
-            <a href="#" class="btn primary" data-signup-btn>Join Now &amp; Start Winning</a>
+            <a href="#" class="btn primary" data-signup-btn="">Join Now &amp; Start Winning</a>
             <a href="#how" class="btn ghost">How it works</a>
           </div>
           <div class="badges">
@@ -446,7 +446,7 @@ img{max-width:100%; display:block}
             <p class="sub">Only 995 tickets â¢ $10 each â¢ Licence #465790</p>
             <p class="pitch">Think flagship gear, premium apparel, and field-ready accessories curated for a single lucky winner.</p>
             <div class="cta-stack">
-              <a href="#" class="btn fun" data-signup-btn><i class="fa-solid fa-bolt"></i> Get Tickets Now</a>
+              <a href="#" class="btn fun" data-signup-btn=""><i class="fa-solid fa-bolt"></i> Get Tickets Now</a>
               <span class="pill accent"><i class="fa-solid fa-clock"></i> Draw: Dec 26, 2025</span>
             </div>
           </article>
@@ -543,14 +543,14 @@ img{max-width:100%; display:block}
       <div class="container">
         <div class="section-head">
           <p class="section-eyebrow">Compliance</p>
-          <h2 class="section-title">Licensed & regulated</h2>
+          <h2 class="section-title">Licensed &amp; regulated</h2>
           <p class="section-sub">Licensed raffle with clear limits, posted draw date, and a focus on player wellbeing.</p>
         </div>
 
         <div class="rg-grid">
           <div class="rg-card">
             <div class="rg-icon"><i class="fa-solid fa-shield-halved"></i></div>
-            <h3>Licence & limits</h3>
+            <h3>Licence &amp; limits</h3>
             <p>Licence #465790 â¢ 995 tickets â¢ $10 each â¢ Draw: Dec 26, 2025 â¢ One $3,780 winner.</p>
             <span class="rg-badge-pill"><i class="fa-solid fa-scale-balanced"></i> Posted odds: max 1 in 995</span>
           </div>
@@ -603,7 +603,7 @@ img{max-width:100%; display:block}
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="brand">
+          <div class="brand" style="position: relative;">
             <img src="assets/img.png" alt="Zlottour logo">
             <span class="brand-name">Zlottour Raffle</span>
           </div>
@@ -635,7 +635,7 @@ img{max-width:100%; display:block}
           Alberta Health Services Addiction Helpline: <a href="tel:18663322322" class="link-accent">1-866-332-2322</a> | <a href="https://aglc.ca/gaming/responsible-gambling" class="link-accent" target="_blank" rel="noopener noreferrer">Learn More</a>
         </div>
       </div>
-      <p class="footer-copy">Â© <span data-year></span> Zlottour Raffle | Licence #465790 | 18+ responsible play</p>
+      <p class="footer-copy">Â© <span data-year=""></span> Zlottour Raffle | Licence #465790 | 18+ responsible play</p>
     </div>
   </footer>
 
@@ -652,14 +652,14 @@ img{max-width:100%; display:block}
 
   <div class="zlottour-modal" id="signupModal">
     <div class="modal-card">
-      <button class="modal-close" type="button" data-modal-close aria-label="Close form"><i class="fa-solid fa-xmark"></i></button>
+      <button class="modal-close" type="button" data-modal-close="" aria-label="Close form"><i class="fa-solid fa-xmark"></i></button>
       <h3>Ticket Purchase Inquiry</h3>
       <p>Send us a message about buying raffle tickets. Weâll respond with next steps.</p>
       <form id="signupForm" class="modal-form">
-        <input type="text" id="signupName" placeholder="Full name" required>
-        <input type="email" id="signupEmail" placeholder="Email address" required>
-        <input type="tel" id="signupPhone" placeholder="Phone number" required>
-        <textarea id="signupMessage" placeholder="Your message or ticket request" rows="3" required></textarea>
+        <input type="text" id="signupName" placeholder="Full name" required="">
+        <input type="email" id="signupEmail" placeholder="Email address" required="">
+        <input type="tel" id="signupPhone" placeholder="Phone number" required="">
+        <textarea id="signupMessage" placeholder="Your message or ticket request" rows="3" required=""></textarea>
         <button type="submit" class="btn primary">Send message</button>
         <p id="signupStatus" class="modal-status" aria-live="polite"></p>
       </form>
@@ -674,6 +674,8 @@ img{max-width:100%; display:block}
     </div>
   </div>
 
-  <script src="assets/main.js" defer></script>
+  <script src="assets/main.js" defer=""></script>
+
+
 </body>
 </html>
