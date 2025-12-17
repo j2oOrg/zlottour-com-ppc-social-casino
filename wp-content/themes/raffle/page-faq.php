@@ -12,7 +12,8 @@ get_header();
       <p class="eyebrow-t8k9">Need answers?</p>
       <h1 class="section-title-m3y2" style="font-size:2.5rem; margin-bottom:0.35rem;">Frequently Asked Questions</h1>
       <p class="section-sub-p0c6" style="max-width:860px;">Answers to common questions about the zlottour Raffle.</p>
-      <p class="faq-meta-u6e4">Licence #465790 • Draw: Dec 26, 2025 • 995 tickets at $10</p>
+      <p class="faq-meta-u6e4">Operator / Licensee: zlottour Association Foundation • AGLC Raffle Licence #662961 • Draw: Feb 25, 2026 • 995 tickets at $10</p>
+      <p class="section-sub-p0c6" style="max-width:860px;">zlottour is the campaign/brand name only and is not the operator; all raffle operations are run by the zlottour Association Foundation under AGLC oversight.</p>
     </div>
   </section>
 
@@ -25,7 +26,7 @@ get_header();
 
       <article class="faq-card-n8k5">
         <h3>Who can buy a ticket?</h3>
-        <p>You must be 19+ and a resident of Alberta, Canada. Employees and immediate family of the licensee are not eligible.</p>
+        <p>You must be 18+ and physically located in Alberta, Canada. Employees and immediate family of the licensee are not eligible.</p>
       </article>
 
       <article class="faq-card-n8k5">
@@ -35,7 +36,7 @@ get_header();
 
       <article class="faq-card-n8k5">
         <h3>When and where is the draw?</h3>
-        <p>The draw is scheduled for December 26, 2025 at Taber Community Hall, Taber, Alberta. It will follow Alberta Gaming regulations.</p>
+        <p>The draw is scheduled for February 25, 2026 at Fort Edmonton Park, Edmonton. It will follow Alberta Gaming regulations.</p>
       </article>
 
       <article class="faq-card-n8k5">

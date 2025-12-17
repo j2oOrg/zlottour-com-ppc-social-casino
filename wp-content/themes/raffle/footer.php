@@ -15,8 +15,27 @@
 
     <div class="footer-note-w0e3" style="text-align:center;">
       <p class="section-sub-p0c6" style="margin:0;">
-        © 2025 zlottour Association. All rights reserved. | Licence #465790<br>
-        Please play responsibly. Must be 19+ to participate.<br>
+        zlottour Association Foundation<br>
+        AGLC Raffle Licence #662961<br>
+        Issued by Alberta Gaming, Liquor &amp; Cannabis
+      </p>
+      <p class="section-sub-p0c6" style="margin:0.5rem 0 0;">
+        Draw Date: February 25, 2026<br>
+        Prize: 50% of ticket sales
+      </p>
+      <p class="section-sub-p0c6" style="margin:0.5rem 0 0;">
+        Must be 18+ and physically located in Alberta to participate.<br>
+        All raffles conducted in accordance with AGLC regulations.
+      </p>
+      <p class="section-sub-p0c6" style="margin:0.5rem 0 0;">
+        Marketing services provided by DigiBox Ltd (authorized agent).
+      </p>
+      <p class="section-sub-p0c6" style="margin:0.5rem 0 0;">
+        Responsible Participation: This raffle is conducted in accordance with Alberta law. If participation in games of chance becomes a concern, support is available.<br>
+        Alberta Gambling Helpline: 1-866-332-2322 • <a href="https://www.albertahealthservices.ca" target="_blank" rel="noopener noreferrer" class="link-accent-m8q5">www.albertahealthservices.ca</a><br>
+        Participation is limited to individuals 18+ located in Alberta.
+      </p>
+      <p class="section-sub-p0c6" style="margin:0.5rem 0 0;">
         <a href="<?php echo esc_url( $privacy_link ); ?>" class="link-accent-m8q5">Privacy Policy</a>
       </p>
     </div>

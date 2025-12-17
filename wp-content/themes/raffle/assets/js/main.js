@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const minutesEl = document.getElementById("countdownMinutes");
   const secondsEl = document.getElementById("countdownSeconds");
   if (daysEl && hoursEl && minutesEl && secondsEl) {
-    const target = new Date("December 26, 2025 00:00:00").getTime();
+    const target = new Date("February 25, 2026 00:00:00").getTime();
     const updateCountdown = () => {
       const now = Date.now();
       const diff = Math.max(target - now, 0);

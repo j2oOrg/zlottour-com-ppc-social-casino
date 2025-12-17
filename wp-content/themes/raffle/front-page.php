@@ -10,15 +10,16 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
   <section class="hero" id="home">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Compete &amp; win big every week</p>
-        <h1 class="hero-title">Up to $154,000 cash prizes weekly</h1>
+        <p class="eyebrow">Licensed charitable raffle</p>
+        <h1 class="hero-title">zlottour Association Foundation 50/50 Raffle</h1>
         <div class="hero-prize-stack">
-          <span class="hero-prize">$3,780 Current Licensed Draw</span>
-          <span class="hero-prize-sub">995 tickets • $10 each • Licence #465790</span>
+          <span class="hero-prize">$3,780 Current Licensed Draw Amount</span>
+          <span class="hero-prize-sub">(50% of ticket sales to date, per AGLC Raffle Licence #662961)</span>
         </div>
-        <p class="hero-sub">zlottour is a licensed raffle experience with real cash prizes. Enter the current draw, track the countdown, and see winners posted after the official date.</p>
+        <p class="hero-sub">Licensed charitable raffle operated under AGLC Raffle Licence #662961. Issued by Alberta Gaming, Liquor &amp; Cannabis.</p>
+        <p class="hero-sub">Winner receives 50% of ticket sales for this licensed draw.</p>
         <div class="countdown-card">
-          <p class="countdown-title">Draw date: December 26, 2025</p>
+          <p class="countdown-title">Draw date: February 25, 2026</p>
           <div class="countdown" id="countdown">
             <div class="slot"><span class="value" id="countdownDays">27</span><small>Days</small></div>
             <div class="slot"><span class="value" id="countdownHours">00</span><small>Hours</small></div>
@@ -30,11 +31,13 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
           <a href="#" class="btn primary" data-signup-btn>Join Now &amp; Start Winning</a>
           <a href="#how" class="btn ghost">How it works</a>
         </div>
+        <p class="hero-sub" style="font-size:0.95rem; margin-top:0.4rem;">Must be 18+ and physically located in Alberta at time of purchase.</p>
         <div class="badges">
-          <span class="pill accent"><i class="fa-solid fa-certificate"></i> Licence #465790</span>
+          <span class="pill accent"><i class="fa-solid fa-certificate"></i> AGLC Licence #662961</span>
           <span class="pill"><i class="fa-solid fa-ticket"></i> 995 tickets total</span>
-          <span class="pill"><i class="fa-solid fa-calendar-day"></i> Draw: Dec 26, 2025</span>
+          <span class="pill"><i class="fa-solid fa-calendar-day"></i> Draw: Feb 25, 2026</span>
         </div>
+        <p class="hero-sub" style="margin-top:0.8rem;">Operator / Licensee: zlottour Association Foundation • Authority: Alberta Gaming, Liquor &amp; Cannabis (AGLC). zlottour is the campaign/brand name only and is not the operator.</p>
       </div>
 
       <div class="hero-visual">
@@ -55,13 +58,23 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
 
       <div class="grand-prize-wrap">
         <article class="grand-card">
+          <div class="info-block" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:1rem; margin-bottom:1rem;">
+            <p class="section-sub" style="margin:0 0 0.35rem; text-transform:uppercase; letter-spacing:0.08em; font-size:0.9rem;">Ticket Details (As Licensed)</p>
+            <ul style="margin:0; padding-left:1.1rem; color:#dbe2ee; line-height:1.5;">
+              <li>Ticket price: $10.00 per ticket</li>
+              <li>Total tickets available: 995</li>
+              <li>Prize: 50% of total ticket sales</li>
+              <li>Draw date: February 25, 2026</li>
+              <li>Draw location: Fort Edmonton Park, Edmonton</li>
+            </ul>
+          </div>
           <h3>Prize overview</h3>
           <p class="value">$3,780 value</p>
-          <p class="sub">Only 995 tickets • $10 each • Licence #465790</p>
+          <p class="sub">Only 995 tickets • $10 each • AGLC Raffle Licence #662961</p>
           <p class="pitch">Think flagship gear, premium apparel, and field-ready accessories curated for a single lucky winner.</p>
           <div class="cta-stack">
             <a href="#" class="btn fun" data-signup-btn><i class="fa-solid fa-bolt"></i> Get Tickets Now</a>
-            <span class="pill accent"><i class="fa-solid fa-clock"></i> Draw: Dec 26, 2025</span>
+            <span class="pill accent"><i class="fa-solid fa-clock"></i> Draw: Feb 25, 2026</span>
           </div>
         </article>
 
@@ -83,8 +96,8 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
           </div>
           <div class="stat-box">
             <p class="label">Draw date</p>
-            <p class="num">Dec 26</p>
-            <p class="hint">2025 • Licensed &amp; posted</p>
+            <p class="num">Feb 25</p>
+            <p class="hint">2026 • Licensed &amp; posted</p>
           </div>
         </div>
       </div>
@@ -106,7 +119,7 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
         </article>
         <article class="package-card">
           <div class="package-name">2. Wait for draw</div>
-          <p class="package-note">Official draw on December 26, 2025.</p>
+          <p class="package-note">Official draw on February 25, 2026.</p>
         </article>
         <article class="package-card">
           <div class="package-name">3. Win the prize</div>
@@ -134,6 +147,15 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
           </p>
           <a href="<?php echo esc_url( home_url('/faq') ); ?>" class="btn primary">Ask about the mission</a>
         </article>
+        <article class="package-card" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12);">
+          <p class="section-eyebrow" style="margin-bottom:0.35rem;">Operator</p>
+          <p class="section-sub" style="margin:0;">Operated by:<br>
+          zlottour Association Foundation<br>
+          9111-39 Avenue, Edmonton, AB T6E5Y2<br>
+          Licensed charitable organization in Alberta</p>
+          <p class="section-sub" style="margin:0.6rem 0 0;">Advertising and marketing services provided by:<br>
+          DigiBox Ltd (authorized agent)</p>
+        </article>
       </div>
     </div>
   </section>
@@ -143,7 +165,7 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
       <div class="section-head">
         <p class="section-eyebrow">Winners</p>
         <h2 class="section-title">Winners announced after the draw</h2>
-        <p class="section-sub">Check back after December 26, 2025 for the official winner announcement.</p>
+        <p class="section-sub">Check back after February 25, 2026 for the official winner announcement.</p>
       </div>
       <div class="package-grid">
         <article class="package-card">
@@ -158,21 +180,21 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
       <div class="section-head">
         <p class="section-eyebrow">Compliance</p>
         <h2 class="section-title">Licensed &amp; regulated</h2>
-        <p class="section-sub">Licensed raffle with clear limits, posted draw date, and a focus on player wellbeing.</p>
+        <p class="section-sub">Operator / Licensee: zlottour Association Foundation • AGLC Raffle Licence #662961 • Authority: Alberta Gaming, Liquor &amp; Cannabis (AGLC). zlottour is the campaign/brand name only.</p>
       </div>
 
       <div class="rg-grid">
         <div class="rg-card">
           <div class="rg-icon"><i class="fa-solid fa-shield-halved"></i></div>
           <h3>Licence &amp; limits</h3>
-          <p>Licence #465790 • 995 tickets • $10 each • Draw: Dec 26, 2025 • One $3,780 winner.</p>
+          <p>Operator / Licensee: zlottour Association Foundation • AGLC Raffle Licence #662961 • 995 tickets • $10 each • Draw: Feb 25, 2026 • One $3,780 winner.</p>
           <span class="rg-badge-pill"><i class="fa-solid fa-scale-balanced"></i> Posted odds: max 1 in 995</span>
         </div>
         <div class="rg-card">
           <div class="rg-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-          <h3>Play safe, every time</h3>
-          <p>19+ only. Set limits, keep raffle play fun, and take breaks. We promote balance over impulse.</p>
-          <a class="rg-cta" href="https://aglc.ca/gaming/responsible-gambling" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Responsible gaming tips</a>
+          <h3>Participate responsibly</h3>
+          <p>18+ only. Set limits, keep raffle participation balanced, and take breaks. We promote balance over impulse.</p>
+          <a class="rg-cta" href="https://www.albertahealthservices.ca" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Responsible participation resources</a>
         </div>
         <div class="rg-card">
           <div class="rg-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
@@ -213,9 +235,9 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
 </main>
 
 <div class="sticky-ribbon">
-  <div class="item"><i class="fa-solid fa-circle-exclamation"></i> 19+</div>
+  <div class="item"><i class="fa-solid fa-circle-exclamation"></i> 18+</div>
   <div class="item"><i class="fa-solid fa-shield"></i> Responsible Gaming</div>
-  <div class="item"><i class="fa-solid fa-ticket"></i> Licence #465790</div>
+  <div class="item"><i class="fa-solid fa-ticket"></i> AGLC Licence #662961</div>
   <div class="item"><i class="fa-solid fa-bolt"></i> Fast Checkout</div>
 </div>
 
@@ -237,9 +259,9 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
 
 <div class="sticky-footer">
   <div class="container">
-    <div class="badge"><span class="age-number">19+</span></div>
+    <div class="badge"><span class="age-number">18+</span></div>
     <div class="badge"><i class="fa-solid fa-shield-check"></i> Responsible Gaming</div>
-    <div class="badge"><i class="fa-solid fa-certificate"></i> Licence #465790</div>
+    <div class="badge"><i class="fa-solid fa-certificate"></i> AGLC Licence #662961</div>
   </div>
 </div>
 
