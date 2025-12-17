@@ -9,7 +9,7 @@ get_header();
   <section class="game-stack-t1y7" id="play">
     <div class="shell-wrap-z4m2">
       <h1 class="section-title-m3y2">Play library</h1>
-      <p class="section-sub-p0c6">Free-to-play social casino style experiences from partners — no deposits, no prizes, 18+ only.</p>
+      <p class="section-sub-p0c6">Free-to-play social casino style experiences from partners — no deposits, no prizes, 19+ only.</p>
       <div class="frame-grid-z9w2">
         <div class="game-card-f6m4">
           <div class="game-chip-e6s1"><i class="fa-solid fa-bolt"></i>Live preview</div>

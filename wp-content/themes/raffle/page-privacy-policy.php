@@ -120,7 +120,7 @@ get_header();
         <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites. We encourage you to review the privacy policies of any third-party sites you visit.</p>
 
         <h2>10. Children's Privacy</h2>
-        <p>This raffle is only open to individuals 18 years of age or older. We do not knowingly collect personal information from individuals under 18. If we become aware that we have collected information from someone under 18, we will take steps to delete that information promptly.</p>
+        <p>This raffle is only open to individuals 19 years of age or older. We do not knowingly collect personal information from individuals under 19. If we become aware that we have collected information from someone under 19, we will take steps to delete that information promptly.</p>
 
         <h2>11. Changes to This Privacy Policy</h2>
         <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable laws. We will notify you of any material changes by posting the updated policy on our website with a new "Last Updated" date. Your continued participation in the raffle after such changes constitutes your acceptance of the updated policy.</p>
@@ -130,8 +130,8 @@ get_header();
           <p><strong>Alberta Conservation Association</strong><br>
           Game Bird Hunt Site 2025 Raffle<br>
           Licence #465790</p>
-          <p><strong>Website:</strong> <a href="<?php echo esc_url( home_url('/') ); ?>">aca-raffle.com</a><br>
-          <strong>Email:</strong> <a href="mailto:[email protected]">[email protected]</a></p>
+          <p><strong>Website:</strong> <a href="<?php echo esc_url( home_url('/') ); ?>">zlottour.com</a><br>
+          <strong>Email:</strong> <a href="mailto:support@zlottour.com">support@zlottour.com</a></p>
           <p>Please visit our <a href="<?php echo esc_url( home_url('/#contact') ); ?>">Contact section</a> for more ways to reach us.</p>
         </div>
 

@@ -14,7 +14,7 @@ get_header();
       <p class="section-sub-p0c6">zlottour provides free-to-play, social casino style experiences for entertainment, previews, and campaign review. No deposits, wagers, or prizes are offered.</p>
 
       <h3 class="subheading-c8q2">2. Eligibility</h3>
-      <p class="section-sub-p0c6">Use is restricted to adults aged 18+. If you are not of legal age in your region, do not access or share this site.</p>
+        <p class="section-sub-p0c6">Use is restricted to adults aged 19+. If you are not of legal age in your region, do not access or share this site.</p>
 
       <h3 class="subheading-c8q2">3. Acceptable use</h3>
       <p class="section-sub-p0c6">You agree not to tamper with code, attempt unauthorized access, scrape content, or redistribute assets without written permission. Lawful, respectful use is required.</p>

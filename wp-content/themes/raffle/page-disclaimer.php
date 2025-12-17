@@ -12,7 +12,7 @@ get_header();
       <h3 class="subheading-c8q2">1. Purpose</h3>
       <p class="section-sub-p0c6"><strong>zlottour</strong> is an entertainment-only shell for social casino style browser experiences. There are no deposits, wagers, cashouts, or prizes anywhere on this site.</p>
       <h3 class="subheading-c8q2">2. Audience</h3>
-      <p class="section-sub-p0c6">Use is restricted to adults aged 18+. If you are not of age in your region, please do not access or share this site.</p>
+      <p class="section-sub-p0c6">Use is restricted to adults aged 19+. If you are not of age in your region, please do not access or share this site.</p>
       <h3 class="subheading-c8q2">3. No advice</h3>
       <p class="section-sub-p0c6">All content is for entertainment and creative reference. Nothing here should be treated as legal, financial, or professional advice.</p>
       <h3 class="subheading-c8q2">4. Availability</h3>

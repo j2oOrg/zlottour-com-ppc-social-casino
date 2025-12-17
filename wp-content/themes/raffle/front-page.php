@@ -16,7 +16,7 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
           <span class="hero-prize">$3,780 Current Licensed Draw</span>
           <span class="hero-prize-sub">995 tickets • $10 each • Licence #465790</span>
         </div>
-        <p class="hero-sub">Zlottour is a licensed raffle experience with real cash prizes. Enter the current draw, track the countdown, and see winners posted after the official date.</p>
+        <p class="hero-sub">zlottour is a licensed raffle experience with real cash prizes. Enter the current draw, track the countdown, and see winners posted after the official date.</p>
         <div class="countdown-card">
           <p class="countdown-title">Draw date: December 26, 2025</p>
           <div class="countdown" id="countdown">
@@ -39,7 +39,7 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
 
       <div class="hero-visual">
         <div class="halo"></div>
-        <img src="<?php echo esc_url( $hero_image ); ?>" alt="Zlottour Raffle hero">
+        <img src="<?php echo esc_url( $hero_image ); ?>" alt="zlottour Raffle hero">
         <span class="hero-label"><i class="fa-solid fa-circle-info"></i> Real cash prizes</span>
       </div>
     </div>
@@ -171,7 +171,7 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
         <div class="rg-card">
           <div class="rg-icon"><i class="fa-solid fa-heart-pulse"></i></div>
           <h3>Play safe, every time</h3>
-          <p>18+ only. Set limits, keep raffle play fun, and take breaks. We promote balance over impulse.</p>
+          <p>19+ only. Set limits, keep raffle play fun, and take breaks. We promote balance over impulse.</p>
           <a class="rg-cta" href="https://aglc.ca/gaming/responsible-gambling" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Responsible gaming tips</a>
         </div>
         <div class="rg-card">
@@ -213,7 +213,7 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
 </main>
 
 <div class="sticky-ribbon">
-  <div class="item"><i class="fa-solid fa-circle-exclamation"></i> 18+</div>
+  <div class="item"><i class="fa-solid fa-circle-exclamation"></i> 19+</div>
   <div class="item"><i class="fa-solid fa-shield"></i> Responsible Gaming</div>
   <div class="item"><i class="fa-solid fa-ticket"></i> Licence #465790</div>
   <div class="item"><i class="fa-solid fa-bolt"></i> Fast Checkout</div>
@@ -237,7 +237,7 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
 
 <div class="sticky-footer">
   <div class="container">
-    <div class="badge"><span class="age-number">18+</span></div>
+    <div class="badge"><span class="age-number">19+</span></div>
     <div class="badge"><i class="fa-solid fa-shield-check"></i> Responsible Gaming</div>
     <div class="badge"><i class="fa-solid fa-certificate"></i> Licence #465790</div>
   </div>

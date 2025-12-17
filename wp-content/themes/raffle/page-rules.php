@@ -11,7 +11,7 @@ get_header();
     <div class="shell-wrap-z4m2">
       <p class="eyebrow-t8k9">Official Rules</p>
       <h1 class="section-title-m3y2" style="font-size:2.6rem; margin-bottom:0.35rem;">Rules &amp; Regulations</h1>
-      <p class="section-sub-p0c6" style="max-width:860px;">Official terms and conditions for Zlottour Raffle, reflecting the ACA raffle structure.</p>
+      <p class="section-sub-p0c6" style="max-width:860px;">Official terms and conditions for zlottour Raffle, reflecting the ACA raffle structure.</p>
       <p class="rules-meta-w5v1">Licence #465790 • 995 tickets • $10 per ticket • Draw: December 26, 2025</p>
     </div>
   </section>
@@ -20,7 +20,7 @@ get_header();
     <div class="shell-wrap-z4m2">
       <div class="rules-highlight-b3n2">
         <p><strong>Licence Number:</strong> 465790</p>
-        <p><strong>Licensee:</strong> Zlottour Raffle</p>
+        <p><strong>Licensee:</strong> zlottour Raffle</p>
         <p><strong>Licence Term:</strong> September 26, 2025 - December 31, 2025</p>
       </div>
 
@@ -28,9 +28,9 @@ get_header();
         <h2>1. Eligibility</h2>
         <p>To participate, you must:</p>
         <ul>
-          <li>Be 18 years of age or older at the time of ticket purchase.</li>
+            <li>Be 19 years of age or older at the time of ticket purchase.</li>
           <li>Be a resident of Alberta, Canada.</li>
-          <li>Not be an employee or immediate family member of Zlottour Raffle (licensee).</li>
+          <li>Not be an employee or immediate family member of zlottour Raffle (licensee).</li>
           <li>Comply with applicable Alberta Gaming, Liquor and Cannabis regulations.</li>
         </ul>
       </div>
@@ -101,9 +101,9 @@ get_header();
       <div class="rules-card-m5k1">
         <h2>7. General Conditions</h2>
         <ul>
-          <li>Zlottour Raffle reserves the right to cancel or modify the raffle if circumstances beyond our control make it necessary.</li>
+          <li>zlottour Raffle reserves the right to cancel or modify the raffle if circumstances beyond our control make it necessary.</li>
           <li>In the event of cancellation, all ticket purchasers will receive a full refund.</li>
-          <li>All decisions made by Zlottour Raffle regarding this raffle are final.</li>
+          <li>All decisions made by zlottour Raffle regarding this raffle are final.</li>
           <li>This raffle is subject to all applicable federal, provincial, and municipal laws and regulations.</li>
           <li>By purchasing a ticket, participants agree to be bound by these rules and regulations.</li>
         </ul>
@@ -121,7 +121,7 @@ get_header();
 
       <div class="rules-card-m5k1">
         <h2>9. Limitation of Liability</h2>
-        <p>Zlottour Raffle, its directors, officers, employees, and agents shall not be liable for:</p>
+        <p>zlottour Raffle, its directors, officers, employees, and agents shall not be liable for:</p>
         <ul>
           <li>Any injury, loss, or damage arising from participation in this raffle.</li>
           <li>Any technical malfunctions or failures.</li>
